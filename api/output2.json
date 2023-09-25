@@ -1,0 +1,6071 @@
+[
+  {
+    "question": "Basic principles of CIT divided in how many parts",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Cash in transit",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vehicle Mounted"
+      },
+      {
+        "label": "B",
+        "text": "Dismounted"
+      },
+      {
+        "label": "C",
+        "text": "All of the Above"
+      }
+    ]
+  },
+  {
+    "question": "CIT crews normally comprised of",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Cash in transit",
+    "options": [
+      {
+        "label": "A",
+        "text": "Delivery Van, carrier, Supporter"
+      },
+      {
+        "label": "B",
+        "text": "Driver, Courier, Escort"
+      },
+      {
+        "label": "C",
+        "text": "Driver, Carrier, Supporter"
+      }
+    ]
+  },
+  {
+    "question": "Who is responsible for the Licensing and inspection of CIT companies?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Cash in transit",
+    "options": [
+      {
+        "label": "A",
+        "text": "TSTI"
+      },
+      {
+        "label": "B",
+        "text": "PSBD"
+      },
+      {
+        "label": "C",
+        "text": "None of the above"
+      }
+    ]
+  },
+  {
+    "question": "which is the Potential source of threats to a CIT operation",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Cash in transit",
+    "options": [
+      {
+        "label": "A",
+        "text": "Planned attack and robbery"
+      },
+      {
+        "label": "B",
+        "text": "Accidential injury to CIT crews"
+      },
+      {
+        "label": "C",
+        "text": "All of the Above"
+      }
+    ]
+  },
+  {
+    "question": "What is the Role & Task of Courier",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Cash in transit",
+    "options": [
+      {
+        "label": "A",
+        "text": "Responsible for navigation and securing the vehicle"
+      },
+      {
+        "label": "B",
+        "text": "walks with and protect the courier"
+      },
+      {
+        "label": "C",
+        "text": "Carries the CIT container while walking"
+      }
+    ]
+  },
+  {
+    "question": "operation roles and task and activities conducted by the CIT crews who is responsible for the navigation and securing the vehicle",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Cash in transit",
+    "options": [
+      {
+        "label": "A",
+        "text": "courier"
+      },
+      {
+        "label": "B",
+        "text": "Driver"
+      },
+      {
+        "label": "C",
+        "text": "Escort"
+      }
+    ]
+  },
+  {
+    "question": "The CIT crew responsibilities include:",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Cash in transit",
+    "options": [
+      {
+        "label": "A",
+        "text": "communication with central control room during BR trips"
+      },
+      {
+        "label": "B",
+        "text": "undertake secure loading and unloading of cash in a variety of environments"
+      },
+      {
+        "label": "C",
+        "text": "All of the Above"
+      }
+    ]
+  },
+  {
+    "question": "What is meant by the CIT Crews",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Cash in transit",
+    "options": [
+      {
+        "label": "A",
+        "text": "The driver of CIT vehicle"
+      },
+      {
+        "label": "B",
+        "text": "Members of the CIT crew who is incharge of the Task"
+      },
+      {
+        "label": "C",
+        "text": "Driver, Courier & Escort"
+      }
+    ]
+  },
+  {
+    "question": "Stay safe, Donot discuss the work and stay in the vehicle three  prinicples of  ______",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Cash in transit",
+    "options": [
+      {
+        "label": "A",
+        "text": "Fire"
+      },
+      {
+        "label": "B",
+        "text": "Safety"
+      },
+      {
+        "label": "C",
+        "text": "CIT"
+      }
+    ]
+  },
+  {
+    "question": "What does CIT stand for?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Cash in transit",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cash in transit"
+      },
+      {
+        "label": "B",
+        "text": "Cheque in transit"
+      },
+      {
+        "label": "C",
+        "text": "Cash in trap"
+      }
+    ]
+  },
+  {
+    "question": "What are the signs of a suspicious package or device?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Responding to incidents",
+    "options": [
+      {
+        "label": "A",
+        "text": "It has a returns address, Stains, Strange smell, Strange sound, Unexpected delivery, strange delivery instructions."
+      },
+      {
+        "label": "B",
+        "text": "It has no returns address, Stains, Strange smell, Strange sound, Unexpected delivery, strange delivery instructions."
+      },
+      {
+        "label": "C",
+        "text": "None of Above"
+      }
+    ]
+  },
+  {
+    "question": "What you should do If an armed attack is taking place in your side?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Responding to incidents",
+    "options": [
+      {
+        "label": "A",
+        "text": "Become a super hero and save the day, by defeating the attacker."
+      },
+      {
+        "label": "B",
+        "text": "Report immediatly to the control room with the attackers details, Delay the attackers progress."
+      },
+      {
+        "label": "C",
+        "text": "Call for police support and tell the control room that you have the situation under control."
+      }
+    ]
+  },
+  {
+    "question": "If a fire is detected what should you do?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Responding to incidents",
+    "options": [
+      {
+        "label": "A",
+        "text": "Raise the Alarm, Give clear calm directions to leave the area via designated fire routes, Assess the potential for fighting the fire."
+      },
+      {
+        "label": "B",
+        "text": "Raise the alarm, ensure members of the public no where to go, fight the fire."
+      },
+      {
+        "label": "C",
+        "text": "Take a note of them and write this information in your note book."
+      }
+    ]
+  },
+  {
+    "question": "What should you do if you find a hazardous substance exposure?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Responding to incidents",
+    "options": [
+      {
+        "label": "A",
+        "text": "Take a sample of the hazardous substance and take it back to the control room."
+      },
+      {
+        "label": "B",
+        "text": "Report the incident to the control room, Take a sample."
+      },
+      {
+        "label": "C",
+        "text": "Assess the type of substance and establish a safe distance, report the incident to the control room, Determine if the substance can be contained by the security satff in the location."
+      }
+    ]
+  },
+  {
+    "question": "What is the first thing you should do if you see somone acting in a suspicious way?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Responding to incidents",
+    "options": [
+      {
+        "label": "A",
+        "text": "Report them immediately to the control room."
+      },
+      {
+        "label": "B",
+        "text": "Take a note of them and write this information in your note book."
+      },
+      {
+        "label": "C",
+        "text": "Maintain visual contact and continue your patrol."
+      }
+    ]
+  },
+  {
+    "question": "What is the first thing you should do if you see somebody who is violent?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Responding to incidents",
+    "options": [
+      {
+        "label": "A",
+        "text": "Take notes and talk to the person being violent, escort the violent person away."
+      },
+      {
+        "label": "B",
+        "text": "Deal with the offender by, using rapid physical intervention using defensive techniques and restrain the offender."
+      },
+      {
+        "label": "C",
+        "text": "Call the police and escort the offender away from the situation."
+      }
+    ]
+  },
+  {
+    "question": "What is a violent behaviour?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Responding to incidents",
+    "options": [
+      {
+        "label": "A",
+        "text": "If any person is commiting unarmed violenc towards others."
+      },
+      {
+        "label": "B",
+        "text": "If a person is threatening another person."
+      },
+      {
+        "label": "C",
+        "text": "If you see somebody who is shouting at another person."
+      }
+    ]
+  },
+  {
+    "question": "What is purpose of duty Post rotation",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Responding to incidents",
+    "options": [
+      {
+        "label": "A",
+        "text": "Increase vigilance and attentation"
+      },
+      {
+        "label": "B",
+        "text": "Prevents  boredom during long incidents"
+      },
+      {
+        "label": "C",
+        "text": "All of the Above"
+      }
+    ]
+  },
+  {
+    "question": "The presnce of a threat or risk required evacuation an area may be confirmed by visual inspecion, Radio or by witness or observer is called______",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Responding to incidents",
+    "options": [
+      {
+        "label": "A",
+        "text": "Clear"
+      },
+      {
+        "label": "B",
+        "text": "Confirm"
+      },
+      {
+        "label": "C",
+        "text": "Cordon"
+      }
+    ]
+  },
+  {
+    "question": "Prevent unauthorised movement through the cordon line is called______",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Responding to incidents",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cordon"
+      },
+      {
+        "label": "B",
+        "text": "confirm"
+      },
+      {
+        "label": "C",
+        "text": "Control"
+      }
+    ]
+  },
+  {
+    "question": "What is a specific incident within a Goverment building?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Responding to incidents",
+    "options": [
+      {
+        "label": "A",
+        "text": "Fire, Seriouse illness, Armed attack, Teacher Strike,"
+      },
+      {
+        "label": "B",
+        "text": "Fire, Mass protest, Terrorism, IT Breach or data loss."
+      },
+      {
+        "label": "C",
+        "text": "Violent conduct, Severe weather, Terrorism."
+      }
+    ]
+  },
+  {
+    "question": "The basic principles of establishing a security cordon are known as 4Cs",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Responding to incidents",
+    "options": [
+      {
+        "label": "A",
+        "text": "Confirm,Clear,Cordon,Control"
+      },
+      {
+        "label": "B",
+        "text": "credible, clear, conceive, cordon"
+      },
+      {
+        "label": "C",
+        "text": "Clear,concept, cordon,control"
+      }
+    ]
+  },
+  {
+    "question": "If a bomb threat is received by phone and you find the suspious device who you can pass the information by_____",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Responding to incidents",
+    "options": [
+      {
+        "label": "A",
+        "text": "Radio or  mobile phone"
+      },
+      {
+        "label": "B",
+        "text": "Activate the fire Alarm"
+      },
+      {
+        "label": "C",
+        "text": "land line phone"
+      }
+    ]
+  },
+  {
+    "question": "If you receive  the Bomb threat by call, what should to do____",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Responding to incidents",
+    "options": [
+      {
+        "label": "A",
+        "text": "Remain calm and keep the caller on the line as long as possible"
+      },
+      {
+        "label": "B",
+        "text": "Ignore the call"
+      },
+      {
+        "label": "C",
+        "text": "inform to the police"
+      }
+    ]
+  },
+  {
+    "question": "If a site evacuation is required what is the role and task of security staff?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Responding to incidents",
+    "options": [
+      {
+        "label": "A",
+        "text": "maintaning a secondary control room on standby offsite for critical incident requiring evauation"
+      },
+      {
+        "label": "B",
+        "text": "Establishing a temporary command and control post on the ground outside the site"
+      },
+      {
+        "label": "C",
+        "text": "All of the Above"
+      }
+    ]
+  },
+  {
+    "question": "The most important consideration for every incident response procedure are always",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Responding to incidents",
+    "options": [
+      {
+        "label": "A",
+        "text": "Clear and accurate communication"
+      },
+      {
+        "label": "B",
+        "text": "Assesing safety and security levels"
+      },
+      {
+        "label": "C",
+        "text": "All of the Above"
+      }
+    ]
+  },
+  {
+    "question": "Security staff must be trained and prepared to respond  _____ and _____  in critical incident",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Responding to incidents",
+    "options": [
+      {
+        "label": "A",
+        "text": "walking and running"
+      },
+      {
+        "label": "B",
+        "text": "qucikly and efficiently"
+      },
+      {
+        "label": "C",
+        "text": "Standing and patrolling"
+      }
+    ]
+  },
+  {
+    "question": "Considering the impact of critical incident, its clear that _____ is the ideal solution",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Responding to incidents",
+    "options": [
+      {
+        "label": "A",
+        "text": "Precaution"
+      },
+      {
+        "label": "B",
+        "text": "Petition"
+      },
+      {
+        "label": "C",
+        "text": "Prevention"
+      }
+    ]
+  },
+  {
+    "question": "What is the definition of Critical incident?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Responding to incidents",
+    "options": [
+      {
+        "label": "A",
+        "text": "An incident that does not cause disruption to normal operations."
+      },
+      {
+        "label": "B",
+        "text": "An incident that may cause significant disruption to normal operations, or serious harm to people propety or information."
+      },
+      {
+        "label": "C",
+        "text": "The process of evaluationg threats to health, safety and security in real time as a situation change"
+      }
+    ]
+  },
+  {
+    "question": "View the situation as a problem to be solved togather - not a battle to be won is called ____",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Conflict management",
+    "options": [
+      {
+        "label": "A",
+        "text": "Work to find the Solution"
+      },
+      {
+        "label": "B",
+        "text": "Observe and organise the situation"
+      },
+      {
+        "label": "C",
+        "text": "Set the Tone of the conversion"
+      }
+    ]
+  },
+  {
+    "question": "Try to view the conflict as a 3rd person to understand the whole story is called ____",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Conflict management",
+    "options": [
+      {
+        "label": "A",
+        "text": "Work to find the Solution"
+      },
+      {
+        "label": "B",
+        "text": "Observe and organise the situation"
+      },
+      {
+        "label": "C",
+        "text": "Listen and Acknowledge"
+      }
+    ]
+  },
+  {
+    "question": "Listen to the others persons feelings, emotions and experiences is called_____",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Conflict management",
+    "options": [
+      {
+        "label": "A",
+        "text": "Work to find the Solution"
+      },
+      {
+        "label": "B",
+        "text": "Observe and organise the situation"
+      },
+      {
+        "label": "C",
+        "text": "Listen and Acknowledge"
+      }
+    ]
+  },
+  {
+    "question": "What is effective communication?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Conflict management",
+    "options": [
+      {
+        "label": "A",
+        "text": "Clear sending the message"
+      },
+      {
+        "label": "B",
+        "text": "Receiving the message"
+      },
+      {
+        "label": "C",
+        "text": "All of the Above"
+      }
+    ]
+  },
+  {
+    "question": "For the  effective communication Spoken Communication is a part of ______",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Conflict management",
+    "options": [
+      {
+        "label": "A",
+        "text": "Non Verbal Communication"
+      },
+      {
+        "label": "B",
+        "text": "Verbal Communication"
+      },
+      {
+        "label": "C",
+        "text": "None of the above"
+      }
+    ]
+  },
+  {
+    "question": "What are the situations of external  conflict arrises in workplace.",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Conflict management",
+    "options": [
+      {
+        "label": "A",
+        "text": "Satisfacation, Disrespectful employees and motivation"
+      },
+      {
+        "label": "B",
+        "text": "Good communication, privacy, Tidy enivornment"
+      },
+      {
+        "label": "C",
+        "text": "Disrespectful Staff, Deliberate Aggression, Angry visitors"
+      }
+    ]
+  },
+  {
+    "question": "Which type of conflict environment is likely to occur for  the security staff",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Conflict management",
+    "options": [
+      {
+        "label": "A",
+        "text": "In the office, Dealing with people on duty"
+      },
+      {
+        "label": "B",
+        "text": "Between team memebers on duty"
+      },
+      {
+        "label": "C",
+        "text": "All of the Above"
+      }
+    ]
+  },
+  {
+    "question": "Which acronym is used to resolve the conflict?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Conflict management",
+    "options": [
+      {
+        "label": "A",
+        "text": "SLAP"
+      },
+      {
+        "label": "B",
+        "text": "SLOW"
+      },
+      {
+        "label": "C",
+        "text": "SPAT"
+      }
+    ]
+  },
+  {
+    "question": "Written and Body Langauge are part of ____",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Conflict management",
+    "options": [
+      {
+        "label": "A",
+        "text": "Effective Communication"
+      },
+      {
+        "label": "B",
+        "text": "Non Verbal Communication"
+      },
+      {
+        "label": "C",
+        "text": "Spoken Communication"
+      }
+    ]
+  },
+  {
+    "question": "How many basic step to resolve the conflict?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Conflict management",
+    "options": [
+      {
+        "label": "A",
+        "text": "Two Basic Steps"
+      },
+      {
+        "label": "B",
+        "text": "Five Basic Steps"
+      },
+      {
+        "label": "C",
+        "text": "Four Basic Steps"
+      }
+    ]
+  },
+  {
+    "question": "Effective communication can be categorised into:",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Conflict management",
+    "options": [
+      {
+        "label": "A",
+        "text": "Facial Expression, Hand gestures"
+      },
+      {
+        "label": "B",
+        "text": "Verbal , Non Verbal"
+      },
+      {
+        "label": "C",
+        "text": "Internal, External"
+      }
+    ]
+  },
+  {
+    "question": "What are the situations of Internal  conflict arrises in workplace.",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Conflict management",
+    "options": [
+      {
+        "label": "A",
+        "text": "Satisfacation, Disrespectful employees and motivation"
+      },
+      {
+        "label": "B",
+        "text": "Good communication, privacy, Tidy enivornment"
+      },
+      {
+        "label": "C",
+        "text": "Stress, untidy workspace, Poor communication"
+      }
+    ]
+  },
+  {
+    "question": "A State of disagreement between opposing ideas, people or interest is called _____",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Conflict management",
+    "options": [
+      {
+        "label": "A",
+        "text": "Resolution"
+      },
+      {
+        "label": "B",
+        "text": "Conflict"
+      },
+      {
+        "label": "C",
+        "text": "None of the above"
+      }
+    ]
+  },
+  {
+    "question": "The purpose of security escorting visitors is _____",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Access control",
+    "options": [
+      {
+        "label": "A",
+        "text": "Authorised access to controlled area"
+      },
+      {
+        "label": "B",
+        "text": "To give the Protocol to visitors"
+      },
+      {
+        "label": "C",
+        "text": "None of the above"
+      }
+    ]
+  },
+  {
+    "question": "How should you handle unauhtourized access to your site?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Access control",
+    "options": [
+      {
+        "label": "A",
+        "text": "Politely inform the person they cannot enter"
+      },
+      {
+        "label": "B",
+        "text": "Use force and deny the access"
+      },
+      {
+        "label": "C",
+        "text": "Arrest them and detain them until the police come"
+      }
+    ]
+  },
+  {
+    "question": "when contractors exit from your site, what should he have to retrun ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Access control",
+    "options": [
+      {
+        "label": "A",
+        "text": "Security Pass"
+      },
+      {
+        "label": "B",
+        "text": "working Tools"
+      },
+      {
+        "label": "C",
+        "text": "Personnel belongings"
+      }
+    ]
+  },
+  {
+    "question": "Which of the following are prohibited when a vehicle at and Access Point?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Access control",
+    "options": [
+      {
+        "label": "A",
+        "text": "Blowing your horn"
+      },
+      {
+        "label": "B",
+        "text": "Tailgating"
+      },
+      {
+        "label": "C",
+        "text": "Flashing your lights"
+      }
+    ]
+  },
+  {
+    "question": "Which electronic access system requires a number code?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Access control",
+    "options": [
+      {
+        "label": "A",
+        "text": "Pass code access"
+      },
+      {
+        "label": "B",
+        "text": "Eye scanner"
+      },
+      {
+        "label": "C",
+        "text": "Fingerprint reader"
+      }
+    ]
+  },
+  {
+    "question": "The most commonly used method of recording who comes in and out of a site, area or facility is keep an access log is called _____?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Access control",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vistors log"
+      },
+      {
+        "label": "B",
+        "text": "Vendors log"
+      },
+      {
+        "label": "C",
+        "text": "Control Point Log"
+      }
+    ]
+  },
+  {
+    "question": "Where the authorization of personnel or vehicles is checked against access permissions, and a decision made to grant or deny access is called _____",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Access control",
+    "options": [
+      {
+        "label": "A",
+        "text": "Approach Zone"
+      },
+      {
+        "label": "B",
+        "text": "Access Control Zone"
+      },
+      {
+        "label": "C",
+        "text": "Response Zone"
+      }
+    ]
+  },
+  {
+    "question": "The Security staff and system planned to respond to breaches within the access control zone is caleed _______",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Access control",
+    "options": [
+      {
+        "label": "A",
+        "text": "Approach Zone"
+      },
+      {
+        "label": "B",
+        "text": "Access Control Zone"
+      },
+      {
+        "label": "C",
+        "text": "Response Zone"
+      }
+    ]
+  },
+  {
+    "question": "Electronics access control technologies can be divided in to several categories which is most commonly used as a key card access system",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Access control",
+    "options": [
+      {
+        "label": "A",
+        "text": "Biometric"
+      },
+      {
+        "label": "B",
+        "text": "RFID"
+      },
+      {
+        "label": "C",
+        "text": "Passocode"
+      }
+    ]
+  },
+  {
+    "question": "Who is responsible to develope suitable Access Control Policies for specific sites and loctions?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Access control",
+    "options": [
+      {
+        "label": "A",
+        "text": "Organisational Leadership & Security Manger"
+      },
+      {
+        "label": "B",
+        "text": "Security Guard"
+      },
+      {
+        "label": "C",
+        "text": "Site Supervisor"
+      }
+    ]
+  },
+  {
+    "question": "Who is the responsible to ensure the current approved polices are followed?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Access control",
+    "options": [
+      {
+        "label": "A",
+        "text": "H&S"
+      },
+      {
+        "label": "B",
+        "text": "Client"
+      },
+      {
+        "label": "C",
+        "text": "Security Staff"
+      }
+    ]
+  },
+  {
+    "question": "What is the role and resonsibilities of the Escort?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Access control",
+    "options": [
+      {
+        "label": "A",
+        "text": "To give the accompny to the visitors and contractors"
+      },
+      {
+        "label": "B",
+        "text": "To Guide and monitoring site user who do not have the access permission"
+      },
+      {
+        "label": "C",
+        "text": "None of the above"
+      }
+    ]
+  },
+  {
+    "question": "Mechanical Access Control System include",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Access control",
+    "options": [
+      {
+        "label": "A",
+        "text": "Remote Operated Barrier Arm"
+      },
+      {
+        "label": "B",
+        "text": "Iris and Fingerprint Scanning Unit"
+      },
+      {
+        "label": "C",
+        "text": "Passcode access keypad"
+      }
+    ]
+  },
+  {
+    "question": "Access to security controlled zones can be achieved through a variety of tools and technologies. Which two methods of controlling the access?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Access control",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mechanical and Barrier"
+      },
+      {
+        "label": "B",
+        "text": "Mechanical and Electronic"
+      },
+      {
+        "label": "C",
+        "text": "Passcode and Biometric"
+      }
+    ]
+  },
+  {
+    "question": "Which is the ideal design  for significant  an Access Control Point?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Access control",
+    "options": [
+      {
+        "label": "A",
+        "text": "Response zone      Approach zone      Access control zone"
+      },
+      {
+        "label": "B",
+        "text": "Access control zone      Approach zone      Response zone"
+      },
+      {
+        "label": "C",
+        "text": "Approach zone      Access contol zone       Response zone"
+      }
+    ]
+  },
+  {
+    "question": "Electronic access control system include",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Access control",
+    "options": [
+      {
+        "label": "A",
+        "text": "Manual Barrier"
+      },
+      {
+        "label": "B",
+        "text": "Sliding gate"
+      },
+      {
+        "label": "C",
+        "text": "Encoding & reading of ID credentials"
+      }
+    ]
+  },
+  {
+    "question": "What is the role and resonsibilities of the access controller?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Access control",
+    "options": [
+      {
+        "label": "A",
+        "text": "Inspecting ID and verify access permission"
+      },
+      {
+        "label": "B",
+        "text": "Seraching of personal belongings"
+      },
+      {
+        "label": "C",
+        "text": "Calling the Manager/Supervisor"
+      }
+    ]
+  },
+  {
+    "question": "What is the role and resonsibilities of the movement controller?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Access control",
+    "options": [
+      {
+        "label": "A",
+        "text": "The movement controller is responsible for moving people that should not be there"
+      },
+      {
+        "label": "B",
+        "text": "Controlling the flow of people, Pre screening of site users and identify the security threats."
+      },
+      {
+        "label": "C",
+        "text": "The movement controller is responsible for moving vheicles"
+      }
+    ]
+  },
+  {
+    "question": "What is the purpose of controlling access at a site ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Access control",
+    "options": [
+      {
+        "label": "A",
+        "text": "Reduce the risk of criminal or damaging behaviours"
+      },
+      {
+        "label": "B",
+        "text": "Monitor the type and quantity of people or vehicle accessing certain zones"
+      },
+      {
+        "label": "C",
+        "text": "All of the Above"
+      }
+    ]
+  },
+  {
+    "question": "How many basic Principles of Access Control system",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Access control",
+    "options": [
+      {
+        "label": "A",
+        "text": "Access Permision, Identity verification and Control Entry"
+      },
+      {
+        "label": "B",
+        "text": "Control movement, Control People and Control Information"
+      },
+      {
+        "label": "C",
+        "text": "Control Access, Control Gates and Control Barriers"
+      }
+    ]
+  },
+  {
+    "question": "A system or method used to determine who is allowed to enter an area is called ____",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Access control",
+    "options": [
+      {
+        "label": "A",
+        "text": "Entry Control"
+      },
+      {
+        "label": "B",
+        "text": "Access Control"
+      },
+      {
+        "label": "C",
+        "text": "Crowd Control"
+      }
+    ]
+  },
+  {
+    "question": "While the physical body searching step- to perform the search is divided in to how many Zones?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Person searching",
+    "options": [
+      {
+        "label": "A",
+        "text": "Seven"
+      },
+      {
+        "label": "B",
+        "text": "Six"
+      },
+      {
+        "label": "C",
+        "text": "Eight"
+      }
+    ]
+  },
+  {
+    "question": "When Confiscating prohibited items how many steps folows for the security staff for the handling of evidence?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Person searching",
+    "options": [
+      {
+        "label": "A",
+        "text": "Five"
+      },
+      {
+        "label": "B",
+        "text": "Six"
+      },
+      {
+        "label": "C",
+        "text": "Seven"
+      }
+    ]
+  },
+  {
+    "question": "Which side of a walk through metal detector should security staff must stand on safe side",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Person searching",
+    "options": [
+      {
+        "label": "A",
+        "text": "Directly to the side"
+      },
+      {
+        "label": "B",
+        "text": "Exit Side"
+      },
+      {
+        "label": "C",
+        "text": "Entry Side"
+      }
+    ]
+  },
+  {
+    "question": "When using the X-Ray machine for baggage search the image Green will appear on the screen what it stands for?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Person searching",
+    "options": [
+      {
+        "label": "A",
+        "text": "Hard material, Hard Plastic, Wires, Batteries"
+      },
+      {
+        "label": "B",
+        "text": "Light Plastic, Soft plastic"
+      },
+      {
+        "label": "C",
+        "text": "Rubber Leather , Food, Explosives, Liquids gels and powder"
+      }
+    ]
+  },
+  {
+    "question": "When using the X-Ray machine for baggage search the image orange will appear on the screen what it stands for?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Person searching",
+    "options": [
+      {
+        "label": "A",
+        "text": "Hard material, Hard Plastic, Wires, Batteries"
+      },
+      {
+        "label": "B",
+        "text": "Light Plastic, Soft plastic"
+      },
+      {
+        "label": "C",
+        "text": "Rubber Leather , Food, Explosives, Liquids gels and powder"
+      }
+    ]
+  },
+  {
+    "question": "When using the X-Ray machine for baggage search the image blue will appear on the screen what it stands for?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Person searching",
+    "options": [
+      {
+        "label": "A",
+        "text": "Hard material, Hard Plastic, Wires, Batteries"
+      },
+      {
+        "label": "B",
+        "text": "Light Plastic, Soft plastic"
+      },
+      {
+        "label": "C",
+        "text": "Rubber Leather , Food, Explosives, Liquids gels and powder"
+      }
+    ]
+  },
+  {
+    "question": "While X Ray machine is Powered on what safety measured as a operator you have to follow?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Person searching",
+    "options": [
+      {
+        "label": "A",
+        "text": "you can insert the hand in Tunnel to check the baggage."
+      },
+      {
+        "label": "B",
+        "text": "Do not insert the hand in Tunnel to check the baggage."
+      },
+      {
+        "label": "C",
+        "text": "Do not operate the X-Ray machine"
+      }
+    ]
+  },
+  {
+    "question": "Baggage X-ray operation commonly used in most of screening point in  _____ ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Person searching",
+    "options": [
+      {
+        "label": "A",
+        "text": "Hotels, Bars, Restaurants, Shopping Malls"
+      },
+      {
+        "label": "B",
+        "text": "Airports, Government buildings, Tourist attractions & Military Camps"
+      },
+      {
+        "label": "C",
+        "text": "None of the above"
+      }
+    ]
+  },
+  {
+    "question": "What is the best search area for physical search for females?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Person searching",
+    "options": [
+      {
+        "label": "A",
+        "text": "Infront of the Public and CCTV Coverage"
+      },
+      {
+        "label": "B",
+        "text": "Away from Public View and CCTV Coverage in separate room"
+      },
+      {
+        "label": "C",
+        "text": "All of the Above"
+      }
+    ]
+  },
+  {
+    "question": "How many parts of a personel search area in screening point?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Person searching",
+    "options": [
+      {
+        "label": "A",
+        "text": "Pre-screening & Queue Zone, Unpacking area, Search Zone, Follow Up search Zone, Repacking and exit Zone"
+      },
+      {
+        "label": "B",
+        "text": "The Approach Zone, Response Zone, Secured Zone, Final denial barrier and permiter forceing entry & exit"
+      },
+      {
+        "label": "C",
+        "text": "None of the above"
+      }
+    ]
+  },
+  {
+    "question": "The Aims and purpose of personnel searching",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Person searching",
+    "options": [
+      {
+        "label": "A",
+        "text": "Detecting theft or unauthorised removal of items from a site"
+      },
+      {
+        "label": "B",
+        "text": "Prerventing prohibited or dangerous items from entering a site"
+      },
+      {
+        "label": "C",
+        "text": "All of the Above"
+      }
+    ]
+  },
+  {
+    "question": "Personnel search Regulations divided into  two categories",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Person searching",
+    "options": [
+      {
+        "label": "A",
+        "text": "UAE Law"
+      },
+      {
+        "label": "B",
+        "text": "Company Policy"
+      },
+      {
+        "label": "C",
+        "text": "All of the Above"
+      }
+    ]
+  },
+  {
+    "question": "What is the key definition of a Physical search?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Person searching",
+    "options": [
+      {
+        "label": "A",
+        "text": "Visual inspection without physical contact"
+      },
+      {
+        "label": "B",
+        "text": "Display of items carried by presentation for visual search by security staff."
+      },
+      {
+        "label": "C",
+        "text": "Inspection by using hands to search people or belongings"
+      }
+    ]
+  },
+  {
+    "question": "What is the key definition of a screening point?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Person searching",
+    "options": [
+      {
+        "label": "A",
+        "text": "The point of entry, exit or transition within a site where personel are required to be searched"
+      },
+      {
+        "label": "B",
+        "text": "A point  near the exit where the fire and evacuation proceedures are displayed"
+      },
+      {
+        "label": "C",
+        "text": "None of the above is correct"
+      }
+    ]
+  },
+  {
+    "question": "Who is permitted to search to  female visitors?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Person searching",
+    "options": [
+      {
+        "label": "A",
+        "text": "Anyone from  the security team"
+      },
+      {
+        "label": "B",
+        "text": "A female searcher only"
+      },
+      {
+        "label": "C",
+        "text": "Male police officer"
+      }
+    ]
+  },
+  {
+    "question": "Security Guard have a Legal authority to perform search of people and their belonging?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Person searching",
+    "options": [
+      {
+        "label": "A",
+        "text": "By UAE Law"
+      },
+      {
+        "label": "B",
+        "text": "By Permission Only"
+      },
+      {
+        "label": "C",
+        "text": "With the Permission of Supervisor"
+      }
+    ]
+  },
+  {
+    "question": "What is the Aim and purpose of personnel searching?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Person searching",
+    "options": [
+      {
+        "label": "A",
+        "text": "To give awarness to the people"
+      },
+      {
+        "label": "B",
+        "text": "To give the people bad impression"
+      },
+      {
+        "label": "C",
+        "text": "To protect People, property and information"
+      }
+    ]
+  },
+  {
+    "question": "How many parts of personnel search Zones  area is divided?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Person searching",
+    "options": [
+      {
+        "label": "A",
+        "text": "Four"
+      },
+      {
+        "label": "B",
+        "text": "Three"
+      },
+      {
+        "label": "C",
+        "text": "Five"
+      }
+    ]
+  },
+  {
+    "question": "What does HHMD stand for?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Person searching",
+    "options": [
+      {
+        "label": "A",
+        "text": "Hand held metal detector"
+      },
+      {
+        "label": "B",
+        "text": "Held hand metal detector"
+      },
+      {
+        "label": "C",
+        "text": "Metal detector hand held"
+      }
+    ]
+  },
+  {
+    "question": "Why Lane barrier is used during vehicle searh ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Vehicle searching",
+    "options": [
+      {
+        "label": "A",
+        "text": "Provide safety barrier for searching for searching staff"
+      },
+      {
+        "label": "B",
+        "text": "Force traffic to follow set path"
+      },
+      {
+        "label": "C",
+        "text": "All of the Above"
+      }
+    ]
+  },
+  {
+    "question": "Why is  using  the  underside survillance  cameras technologies during vehicle search  ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Vehicle searching",
+    "options": [
+      {
+        "label": "A",
+        "text": "Visually scan the area for potential risks and threats"
+      },
+      {
+        "label": "B",
+        "text": "can detect small changes to the underside of vehicles"
+      },
+      {
+        "label": "C",
+        "text": "All of the Above"
+      }
+    ]
+  },
+  {
+    "question": "What is the purpose of  wearing  gloves during vehicle search?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Vehicle searching",
+    "options": [
+      {
+        "label": "A",
+        "text": "To reduce potential contamination of evidence"
+      },
+      {
+        "label": "B",
+        "text": "To protect against injury when handling sharp or jagged objects"
+      },
+      {
+        "label": "C",
+        "text": "All of the Above"
+      }
+    ]
+  },
+  {
+    "question": "Under what conditions are security staff permitted to search a vehicle?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Vehicle searching",
+    "options": [
+      {
+        "label": "A",
+        "text": "With permission  from the driver"
+      },
+      {
+        "label": "B",
+        "text": "if the vehicle match the site search policy"
+      },
+      {
+        "label": "C",
+        "text": "if the driver is acting suspicious"
+      }
+    ]
+  },
+  {
+    "question": "While searching the vehicle with Partner. How to conduct the vehicle search?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Vehicle searching",
+    "options": [
+      {
+        "label": "A",
+        "text": "Start at diagonally opposite sections of the vehicle"
+      },
+      {
+        "label": "B",
+        "text": "Finish at the same Starting Point"
+      },
+      {
+        "label": "C",
+        "text": "All of the Above"
+      }
+    ]
+  },
+  {
+    "question": "If a dangerous items is detected e.g suspected explosive device or other dangerous material the searched should ___",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Vehicle searching",
+    "options": [
+      {
+        "label": "A",
+        "text": "Evacuate the search Bay and and call the plice"
+      },
+      {
+        "label": "B",
+        "text": "Arrest the driver in accordnce with the UAE Panel Code"
+      },
+      {
+        "label": "C",
+        "text": "All of the Above"
+      }
+    ]
+  },
+  {
+    "question": "When a searhing a light vehicle. How many area to physically inspect___ ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Vehicle searching",
+    "options": [
+      {
+        "label": "A",
+        "text": "Nine"
+      },
+      {
+        "label": "B",
+        "text": "Seven"
+      },
+      {
+        "label": "C",
+        "text": "Ten"
+      }
+    ]
+  },
+  {
+    "question": "If driver refuse to vehicle search policy, what action to take by Security Guard ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Vehicle searching",
+    "options": [
+      {
+        "label": "A",
+        "text": "Deny the access and infrom to the police for assistance"
+      },
+      {
+        "label": "B",
+        "text": "Delaying the traffic"
+      },
+      {
+        "label": "C",
+        "text": "Refusal serch request should be documented and reported"
+      }
+    ]
+  },
+  {
+    "question": "SCRIM is an acronym used to",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Vehicle searching",
+    "options": [
+      {
+        "label": "A",
+        "text": "Describe a Vehicle"
+      },
+      {
+        "label": "B",
+        "text": "Describe a person"
+      },
+      {
+        "label": "C",
+        "text": "Describe a Building"
+      }
+    ]
+  },
+  {
+    "question": "While reporting the traffic violation which acronym is used to idenify the vehicle",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Vehicle searching",
+    "options": [
+      {
+        "label": "A",
+        "text": "SCREM"
+      },
+      {
+        "label": "B",
+        "text": "SCRIM"
+      },
+      {
+        "label": "C",
+        "text": "SCRAM"
+      }
+    ]
+  },
+  {
+    "question": "An area spexifically design to carry out vehicle search is called",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Vehicle searching",
+    "options": [
+      {
+        "label": "A",
+        "text": "Searching"
+      },
+      {
+        "label": "B",
+        "text": "Vehicle paerking"
+      },
+      {
+        "label": "C",
+        "text": "Search Bay"
+      }
+    ]
+  },
+  {
+    "question": "What is a searcher?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Vehicle searching",
+    "options": [
+      {
+        "label": "A",
+        "text": "the person or people responsible for physically inspecting the vehicle"
+      },
+      {
+        "label": "B",
+        "text": "The person in charge of the barrier"
+      },
+      {
+        "label": "C",
+        "text": "The person in charge of the telephone"
+      }
+    ]
+  },
+  {
+    "question": "What is a traffic controller?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Vehicle searching",
+    "options": [
+      {
+        "label": "A",
+        "text": "the person responsible for directing vehicles forward in a queue to be searched or not"
+      },
+      {
+        "label": "B",
+        "text": "A person responsible for radio communications"
+      },
+      {
+        "label": "C",
+        "text": "The person responsible for the barrier operation"
+      }
+    ]
+  },
+  {
+    "question": "What is a  vehicle search bay?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Vehicle searching",
+    "options": [
+      {
+        "label": "A",
+        "text": "A place where people are searched"
+      },
+      {
+        "label": "B",
+        "text": "An area specifically designed to carry out vehicle searches"
+      },
+      {
+        "label": "C",
+        "text": "A place where both people and vehicles are searched"
+      }
+    ]
+  },
+  {
+    "question": "What is the  Purpose of Site Traffic Map?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Traffic Management",
+    "options": [
+      {
+        "label": "A",
+        "text": "Un control Point Locations"
+      },
+      {
+        "label": "B",
+        "text": "Approved traffic routes and restricted area"
+      },
+      {
+        "label": "C",
+        "text": "None of the above"
+      }
+    ]
+  },
+  {
+    "question": "You can  search a driver if you have  ____ of the driver",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Traffic Management",
+    "options": [
+      {
+        "label": "A",
+        "text": "Policy"
+      },
+      {
+        "label": "B",
+        "text": "Request"
+      },
+      {
+        "label": "C",
+        "text": "Permission"
+      }
+    ]
+  },
+  {
+    "question": "if the Driver refuse to cooperte while vehicle searching, what should   security staff do ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Traffic Management",
+    "options": [
+      {
+        "label": "A",
+        "text": "Record  and photograph"
+      },
+      {
+        "label": "B",
+        "text": "Document and Report"
+      },
+      {
+        "label": "C",
+        "text": "None of the above is correct"
+      }
+    ]
+  },
+  {
+    "question": "If you give the directions of traffic wand what is the purpose of Green Light ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Traffic Management",
+    "options": [
+      {
+        "label": "A",
+        "text": "No movement authorised"
+      },
+      {
+        "label": "B",
+        "text": "To give movement direction"
+      },
+      {
+        "label": "C",
+        "text": "None of the above is correct"
+      }
+    ]
+  },
+  {
+    "question": "Security staff should explain to the drivers while giving the site induction ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Traffic Management",
+    "options": [
+      {
+        "label": "A",
+        "text": "Restricted area not to be approached"
+      },
+      {
+        "label": "B",
+        "text": "Parking Zone permitted in the site"
+      },
+      {
+        "label": "C",
+        "text": "All of the Above"
+      }
+    ]
+  },
+  {
+    "question": "Who is responsible enforcing traffic management policies on Site?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Traffic Management",
+    "options": [
+      {
+        "label": "A",
+        "text": "HSE"
+      },
+      {
+        "label": "B",
+        "text": "Security Staff"
+      },
+      {
+        "label": "C",
+        "text": "Client"
+      }
+    ]
+  },
+  {
+    "question": "What is the responsibilites of security guard in  inspection of parking zones ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Traffic Management",
+    "options": [
+      {
+        "label": "A",
+        "text": "verfiy authorization of parked vehicles"
+      },
+      {
+        "label": "B",
+        "text": "Identify suspicious vehicle or security risks"
+      },
+      {
+        "label": "C",
+        "text": "All of the Above"
+      }
+    ]
+  },
+  {
+    "question": "Reading a traffic management plan will normally include the following information about?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Traffic Management",
+    "options": [
+      {
+        "label": "A",
+        "text": "Move backword"
+      },
+      {
+        "label": "B",
+        "text": "Traffic access permissons"
+      },
+      {
+        "label": "C",
+        "text": "Security offic Shift Timing"
+      }
+    ]
+  },
+  {
+    "question": "Which authority is responsible for any traffic violation on site",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Traffic Management",
+    "options": [
+      {
+        "label": "A",
+        "text": "HSE"
+      },
+      {
+        "label": "B",
+        "text": "Security Management"
+      },
+      {
+        "label": "C",
+        "text": "All of the Above"
+      }
+    ]
+  },
+  {
+    "question": "How  many   categories of  Traffic control ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Traffic Management",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vehicle and Pedestrian"
+      },
+      {
+        "label": "B",
+        "text": "Public and  Private"
+      },
+      {
+        "label": "C",
+        "text": "Internal and external"
+      }
+    ]
+  },
+  {
+    "question": "Crossed both arm above your head means ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Traffic Management",
+    "options": [
+      {
+        "label": "A",
+        "text": "Move backword"
+      },
+      {
+        "label": "B",
+        "text": "Emergency Stop"
+      },
+      {
+        "label": "C",
+        "text": "Clear to leave the area"
+      }
+    ]
+  },
+  {
+    "question": "The secuirty Guard need to control the traffic movement of vehicles and people",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Traffic Management",
+    "options": [
+      {
+        "label": "A",
+        "text": "If traffic move smoothly"
+      },
+      {
+        "label": "B",
+        "text": "If traffic is not moving effectively"
+      },
+      {
+        "label": "C",
+        "text": "If vehicle parked properly"
+      }
+    ]
+  },
+  {
+    "question": "while enforcing parking restrrictions in the site, if the driver not comply with site polices, what is the role and responsibilites of security guard ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Traffic Management",
+    "options": [
+      {
+        "label": "A",
+        "text": "Drivers restricted from entering the site in future"
+      },
+      {
+        "label": "B",
+        "text": "Verbal warning to drivers / Drivers sent off the site"
+      },
+      {
+        "label": "C",
+        "text": "All of the Above"
+      }
+    ]
+  },
+  {
+    "question": "While directing a traffic always?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Traffic Management",
+    "options": [
+      {
+        "label": "A",
+        "text": "Safety Shoes, Helmet, Vest"
+      },
+      {
+        "label": "B",
+        "text": "Bike, Car, Segway, Bicycle"
+      },
+      {
+        "label": "C",
+        "text": "Hi-visibility vest, whistle, torch and traffic wounds"
+      }
+    ]
+  },
+  {
+    "question": "While you directing the traffic one vehicle caught fire, and driver stuck inside what you have to do ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Traffic Management",
+    "options": [
+      {
+        "label": "A",
+        "text": "Try to rescue them by breaking the glass and inform to 999"
+      },
+      {
+        "label": "B",
+        "text": "Ignore & watching them"
+      },
+      {
+        "label": "C",
+        "text": "Call to your Superisor"
+      }
+    ]
+  },
+  {
+    "question": "Reading a traffic management plan will not normally  include Information?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Traffic Management",
+    "options": [
+      {
+        "label": "A",
+        "text": "Parking locations & restirctions"
+      },
+      {
+        "label": "B",
+        "text": "Categorisation of traffic types"
+      },
+      {
+        "label": "C",
+        "text": "Hours of the site rush hour"
+      }
+    ]
+  },
+  {
+    "question": "The purpose of a traffic management plan is?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Traffic Management",
+    "options": [
+      {
+        "label": "A",
+        "text": "A. Make sure security staff aware of what is permitte for vehicles on site"
+      },
+      {
+        "label": "B",
+        "text": "B. Maintain the safety of all vehicles & people on site"
+      },
+      {
+        "label": "C",
+        "text": "C. All of the Above"
+      }
+    ]
+  },
+  {
+    "question": "What is M in SCRIM in vehicle descriptions stand for?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Observation & Note taking",
+    "options": [
+      {
+        "label": "A",
+        "text": "Model"
+      },
+      {
+        "label": "B",
+        "text": "Modern"
+      },
+      {
+        "label": "C",
+        "text": "moral"
+      }
+    ]
+  },
+  {
+    "question": "What is  C in SCRIM in vehicle descriptions stand for?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Observation & Note taking",
+    "options": [
+      {
+        "label": "A",
+        "text": "Country"
+      },
+      {
+        "label": "B",
+        "text": "Colour"
+      },
+      {
+        "label": "C",
+        "text": "Collection"
+      }
+    ]
+  },
+  {
+    "question": "What is  S in SCRIM in vehicle descriptions stand for?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Observation & Note taking",
+    "options": [
+      {
+        "label": "A",
+        "text": "Shape"
+      },
+      {
+        "label": "B",
+        "text": "Shadow"
+      },
+      {
+        "label": "C",
+        "text": "Surface"
+      }
+    ]
+  },
+  {
+    "question": "Systems that can help security guards in recording of information?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Observation & Note taking",
+    "options": [
+      {
+        "label": "A",
+        "text": "Securing,  preservation, Identification, logging"
+      },
+      {
+        "label": "B",
+        "text": "Body camera, Hand held camera, mobile phones, CCTV footage"
+      },
+      {
+        "label": "C",
+        "text": "clear, consistant, complete, facual, concise"
+      }
+    ]
+  },
+  {
+    "question": "For preserving Incident scene?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Observation & Note taking",
+    "options": [
+      {
+        "label": "A",
+        "text": "Prevent scene contamination, prevent evidence destruction, prevent evidence movement, prevent evidence removal"
+      },
+      {
+        "label": "B",
+        "text": "Record date and time,  give the context of the statement in relation  to in incident"
+      },
+      {
+        "label": "C",
+        "text": "wear gloves, Collect a sample on a sterile swap and place into a zip lock bag"
+      }
+    ]
+  },
+  {
+    "question": "When you recorded witness in your notebook  you should let witness?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Observation & Note taking",
+    "options": [
+      {
+        "label": "A",
+        "text": "see and sign in his statements"
+      },
+      {
+        "label": "B",
+        "text": "Not know what is written in notebook as it is official"
+      },
+      {
+        "label": "C",
+        "text": "Not applicable"
+      }
+    ]
+  },
+  {
+    "question": "When taking a statement from witnesses you should ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Observation & Note taking",
+    "options": [
+      {
+        "label": "A",
+        "text": "Seprate between them"
+      },
+      {
+        "label": "B",
+        "text": "gathering them in the same time"
+      },
+      {
+        "label": "C",
+        "text": "Not applicable"
+      }
+    ]
+  },
+  {
+    "question": "Taking witness  statement in a site can taken by ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Observation & Note taking",
+    "options": [
+      {
+        "label": "A",
+        "text": "Security guards"
+      },
+      {
+        "label": "B",
+        "text": "Customers"
+      },
+      {
+        "label": "C",
+        "text": "Public"
+      }
+    ]
+  },
+  {
+    "question": "What is SCRIM in vehicle descriptions stand for?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Observation & Note taking",
+    "options": [
+      {
+        "label": "A",
+        "text": "Standard, colour, Registration, model"
+      },
+      {
+        "label": "B",
+        "text": "Shape, colour , recovery, identify, model"
+      },
+      {
+        "label": "C",
+        "text": "Shape, colour, Registration, Identify, model"
+      }
+    ]
+  },
+  {
+    "question": "When describing a vehicle you should identify?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Observation & Note taking",
+    "options": [
+      {
+        "label": "A",
+        "text": "Shape"
+      },
+      {
+        "label": "B",
+        "text": "face"
+      },
+      {
+        "label": "C",
+        "text": "Shadow"
+      }
+    ]
+  },
+  {
+    "question": "When describing a person you should identify?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Observation & Note taking",
+    "options": [
+      {
+        "label": "A",
+        "text": "Clothing"
+      },
+      {
+        "label": "B",
+        "text": "health"
+      },
+      {
+        "label": "C",
+        "text": "back ground"
+      }
+    ]
+  },
+  {
+    "question": "When describing a person you should identify?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Observation & Note taking",
+    "options": [
+      {
+        "label": "A",
+        "text": "Age"
+      },
+      {
+        "label": "B",
+        "text": "health"
+      },
+      {
+        "label": "C",
+        "text": "Family"
+      }
+    ]
+  },
+  {
+    "question": "Recording note book must depend on ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Observation & Note taking",
+    "options": [
+      {
+        "label": "A",
+        "text": "Facts"
+      },
+      {
+        "label": "B",
+        "text": "Assumptions"
+      },
+      {
+        "label": "C",
+        "text": "Facts or Assumptions no matter"
+      }
+    ]
+  },
+  {
+    "question": "The ability to remembering details to record in note book  depend on ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Observation & Note taking",
+    "options": [
+      {
+        "label": "A",
+        "text": "The quality of food"
+      },
+      {
+        "label": "B",
+        "text": "Sleeping well befor duty hours"
+      },
+      {
+        "label": "C",
+        "text": "practice and training of the guard"
+      }
+    ]
+  },
+  {
+    "question": "Humans are able to detect visually in response by?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Observation & Note taking",
+    "options": [
+      {
+        "label": "A",
+        "text": "Shade, shadow, surface, spacing, movement, silhouette"
+      },
+      {
+        "label": "B",
+        "text": "Sight, hearing, smell, touch, taste"
+      },
+      {
+        "label": "C",
+        "text": "duty hours, eqipment received, time finished"
+      }
+    ]
+  },
+  {
+    "question": "How many senses do you have?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Observation & Note taking",
+    "options": [
+      {
+        "label": "A",
+        "text": "4"
+      },
+      {
+        "label": "B",
+        "text": "3"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      }
+    ]
+  },
+  {
+    "question": "In emergency situation security guard can record in his notebook ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Observation & Note taking",
+    "options": [
+      {
+        "label": "A",
+        "text": "during the incidents happened"
+      },
+      {
+        "label": "B",
+        "text": "As soon as posibile after dealing with emergency"
+      },
+      {
+        "label": "C",
+        "text": "After finishing the duty time"
+      }
+    ]
+  },
+  {
+    "question": "When recording observation in notebook use margin for  ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Observation & Note taking",
+    "options": [
+      {
+        "label": "A",
+        "text": "Date"
+      },
+      {
+        "label": "B",
+        "text": "Time"
+      },
+      {
+        "label": "C",
+        "text": "equipment"
+      }
+    ]
+  },
+  {
+    "question": "When recording observation in notebook use ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Observation & Note taking",
+    "options": [
+      {
+        "label": "A",
+        "text": "black pen"
+      },
+      {
+        "label": "B",
+        "text": "blue pen"
+      },
+      {
+        "label": "C",
+        "text": "red pen"
+      }
+    ]
+  },
+  {
+    "question": "When recording observation in notebook do not leave ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Observation & Note taking",
+    "options": [
+      {
+        "label": "A",
+        "text": "any blank pages"
+      },
+      {
+        "label": "B",
+        "text": "reserved notebook"
+      },
+      {
+        "label": "C",
+        "text": "equipment"
+      }
+    ]
+  },
+  {
+    "question": "On duty you should record?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Observation & Note taking",
+    "options": [
+      {
+        "label": "A",
+        "text": "activities in previous site"
+      },
+      {
+        "label": "B",
+        "text": "Duty of the week,Equipement received"
+      },
+      {
+        "label": "C",
+        "text": "pesonal notes"
+      }
+    ]
+  },
+  {
+    "question": "On duty you should record?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Observation & Note taking",
+    "options": [
+      {
+        "label": "A",
+        "text": "Started time& Finished time"
+      },
+      {
+        "label": "B",
+        "text": "Vacation"
+      },
+      {
+        "label": "C",
+        "text": "pesonal notes"
+      }
+    ]
+  },
+  {
+    "question": "On duty you should record?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Observation & Note taking",
+    "options": [
+      {
+        "label": "A",
+        "text": "Date"
+      },
+      {
+        "label": "B",
+        "text": "Vacation"
+      },
+      {
+        "label": "C",
+        "text": "pesonal notes"
+      }
+    ]
+  },
+  {
+    "question": "When completing entries in note book you must be?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Observation & Note taking",
+    "options": [
+      {
+        "label": "A",
+        "text": "Be clear,Concise, consistant, complete"
+      },
+      {
+        "label": "B",
+        "text": "No pages are torn out, and note book not damaged in any way"
+      },
+      {
+        "label": "C",
+        "text": "be factual,clear, carried all the time"
+      }
+    ]
+  },
+  {
+    "question": "Security guards must carry  during duty hours all the time?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Observation & Note taking",
+    "options": [
+      {
+        "label": "A",
+        "text": "Note book and two black ink"
+      },
+      {
+        "label": "B",
+        "text": "Radio Frequency Internal  badges"
+      },
+      {
+        "label": "C",
+        "text": "Baton"
+      }
+    ]
+  },
+  {
+    "question": "What is   an evidence?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Observation & Note taking",
+    "options": [
+      {
+        "label": "A",
+        "text": "Any sample,item or recording that will support a piont of view"
+      },
+      {
+        "label": "B",
+        "text": "Any detail that can be proven to be true"
+      },
+      {
+        "label": "C",
+        "text": "An interpretation of a situation without definite proof"
+      }
+    ]
+  },
+  {
+    "question": "What is  an assumption?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Observation & Note taking",
+    "options": [
+      {
+        "label": "A",
+        "text": "Any sample,item or recording that will support a piont of view"
+      },
+      {
+        "label": "B",
+        "text": "Any detail that can be proven to be true"
+      },
+      {
+        "label": "C",
+        "text": "an interpretation of a situation without definite proof"
+      }
+    ]
+  },
+  {
+    "question": "What is A fact?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Observation & Note taking",
+    "options": [
+      {
+        "label": "A",
+        "text": "Any sample,item or recording that will support a piont of view"
+      },
+      {
+        "label": "B",
+        "text": "Any detail that can be proven to be true"
+      },
+      {
+        "label": "C",
+        "text": "an interpretation of a situation without definite proof"
+      }
+    ]
+  },
+  {
+    "question": "During security patrol security guard should aware of ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Patrolling",
+    "options": [
+      {
+        "label": "A",
+        "text": "note book and two black ink"
+      },
+      {
+        "label": "B",
+        "text": "Location and surroundings"
+      },
+      {
+        "label": "C",
+        "text": "customers and Clients"
+      }
+    ]
+  },
+  {
+    "question": "Which sense security   guard must be  careful  in use during patrol?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Patrolling",
+    "options": [
+      {
+        "label": "A",
+        "text": "Taste"
+      },
+      {
+        "label": "B",
+        "text": "Touch"
+      },
+      {
+        "label": "C",
+        "text": "Sight"
+      }
+    ]
+  },
+  {
+    "question": "Examples of vehicle patrol?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Patrolling",
+    "options": [
+      {
+        "label": "A",
+        "text": "Car,Segway"
+      },
+      {
+        "label": "B",
+        "text": "GPS tracker,Radio"
+      },
+      {
+        "label": "C",
+        "text": "CCTV camera,Drones"
+      }
+    ]
+  },
+  {
+    "question": "When security guard carried out patrol in a hazard area in a site he must?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Patrolling",
+    "options": [
+      {
+        "label": "A",
+        "text": "Adopt the appropriate PPE levels whilst exposed to those risks"
+      },
+      {
+        "label": "B",
+        "text": "carry equipements,flash light,"
+      },
+      {
+        "label": "C",
+        "text": "be ready to work under pressure for more time"
+      }
+    ]
+  },
+  {
+    "question": "When  security guard carried out a patrol in a site he should concentrate on ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Patrolling",
+    "options": [
+      {
+        "label": "A",
+        "text": "reception area"
+      },
+      {
+        "label": "B",
+        "text": "Critical area"
+      },
+      {
+        "label": "C",
+        "text": "Main entrance  area"
+      }
+    ]
+  },
+  {
+    "question": "Critical area in your site can be?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Patrolling",
+    "options": [
+      {
+        "label": "A",
+        "text": "High value goods storage, Heat, venting and cooling machinery, Hazard materials storage"
+      },
+      {
+        "label": "B",
+        "text": "reception area, parking, premieter"
+      },
+      {
+        "label": "C",
+        "text": "Main hall, public area, parking"
+      }
+    ]
+  },
+  {
+    "question": "Requirements for patrol security hand over?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Patrolling",
+    "options": [
+      {
+        "label": "A",
+        "text": "significant observation,Incident routes you made during patrol,specific tasks uncompleted"
+      },
+      {
+        "label": "B",
+        "text": "notebook /two black pen, radio portable, logbook"
+      },
+      {
+        "label": "C",
+        "text": "Notebook, flash light, tourch, radio"
+      }
+    ]
+  },
+  {
+    "question": "For securing security information documednts you can put it in ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Patrolling",
+    "options": [
+      {
+        "label": "A",
+        "text": "your home, company reception, site main area"
+      },
+      {
+        "label": "B",
+        "text": "open cainets, reception area,"
+      },
+      {
+        "label": "C",
+        "text": "Lockable filing cabinet, Recorded files stored,"
+      }
+    ]
+  },
+  {
+    "question": "When you  carry out patrol in darkness area you should carry ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Patrolling",
+    "options": [
+      {
+        "label": "A",
+        "text": "Flash light / torch"
+      },
+      {
+        "label": "B",
+        "text": "notebook /two black pen"
+      },
+      {
+        "label": "C",
+        "text": "Vest /notebook"
+      }
+    ]
+  },
+  {
+    "question": "After complation the security patrol you must hand over the paper work and sbmitted to",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Patrolling",
+    "options": [
+      {
+        "label": "A",
+        "text": "control room communication loger"
+      },
+      {
+        "label": "B",
+        "text": "manager"
+      },
+      {
+        "label": "C",
+        "text": "client"
+      }
+    ]
+  },
+  {
+    "question": "While searching with a team you should?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Patrolling",
+    "options": [
+      {
+        "label": "A",
+        "text": "make cordon a round the area that searched"
+      },
+      {
+        "label": "B",
+        "text": "search every where in the building"
+      },
+      {
+        "label": "C",
+        "text": "limited area to search"
+      }
+    ]
+  },
+  {
+    "question": "To coordinate the movement between search?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Patrolling",
+    "options": [
+      {
+        "label": "A",
+        "text": "Should be one person in charge, Methodical progress through building, single floor at a time if multi- floor building"
+      },
+      {
+        "label": "B",
+        "text": "Return of equipments, Patrol notes and reports, Patrol duty handover"
+      },
+      {
+        "label": "C",
+        "text": "Inspect all patrol equipments, Sign in any specific equipment, place any powered items on charge ,"
+      }
+    ]
+  },
+  {
+    "question": "Planning  cosideration in searching a building?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Patrolling",
+    "options": [
+      {
+        "label": "A",
+        "text": "Building purpose"
+      },
+      {
+        "label": "B",
+        "text": "provide scape route"
+      },
+      {
+        "label": "C",
+        "text": "provide inner cordon during search"
+      }
+    ]
+  },
+  {
+    "question": "When you make building search you should communicate with?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Patrolling",
+    "options": [
+      {
+        "label": "A",
+        "text": "Supervisor"
+      },
+      {
+        "label": "B",
+        "text": "Control room"
+      },
+      {
+        "label": "C",
+        "text": "Manager"
+      }
+    ]
+  },
+  {
+    "question": "Planning  cosideration in searching a building?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Patrolling",
+    "options": [
+      {
+        "label": "A",
+        "text": "Entry and exit location , Stairwell locations, Number of the floors"
+      },
+      {
+        "label": "B",
+        "text": "Return of equipments, Patrol notes and reports, Patrol duty handover"
+      },
+      {
+        "label": "C",
+        "text": "fire exits clear of obstructions,  fire alarm panals operating,  fire extinguisher in correct location, General health and safety hazards"
+      }
+    ]
+  },
+  {
+    "question": "After completion security patrol  you should?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Patrolling",
+    "options": [
+      {
+        "label": "A",
+        "text": "Return of equipments, Patrol notes and reports, Patrol duty handover"
+      },
+      {
+        "label": "B",
+        "text": "Inspect all patrol equipments,Sign in any specific equipment, place any powered itemson charge ,"
+      },
+      {
+        "label": "C",
+        "text": "Significant observation, Incidents, Routes taken during previous patrol,Specific tasks uncompleted"
+      }
+    ]
+  },
+  {
+    "question": "Example of un planned events during security patrol?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Patrolling",
+    "options": [
+      {
+        "label": "A",
+        "text": "Discovering of security breach, Discovering of immediate health and safety concern"
+      },
+      {
+        "label": "B",
+        "text": "Doors and windows secured, Areas not covered by CCTV, Parking area checked for violations , access zone controls are working , Site perimeter is secure"
+      },
+      {
+        "label": "C",
+        "text": "fire exits clear of obstructions, fire alarm panals operating, fire extinguisher in correct location, General health and safety hazards"
+      }
+    ]
+  },
+  {
+    "question": "While a security guard in conducting patrol he should contact with ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Patrolling",
+    "options": [
+      {
+        "label": "A",
+        "text": "Control room"
+      },
+      {
+        "label": "B",
+        "text": "Manager"
+      },
+      {
+        "label": "C",
+        "text": "Supervisor"
+      }
+    ]
+  },
+  {
+    "question": "What is the aim of preparation and testing the equipments before starting the patrol?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Patrolling",
+    "options": [
+      {
+        "label": "A",
+        "text": "reduce the risk of failure while on patrol"
+      },
+      {
+        "label": "B",
+        "text": "To aviod fine from supervisor"
+      },
+      {
+        "label": "C",
+        "text": "to help to finish patrol quickly"
+      }
+    ]
+  },
+  {
+    "question": "Security plans, Patrol maps,patrol instruction must be on found in ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Patrolling",
+    "options": [
+      {
+        "label": "A",
+        "text": "Entrance"
+      },
+      {
+        "label": "B",
+        "text": "Security control room"
+      },
+      {
+        "label": "C",
+        "text": "Reception area"
+      }
+    ]
+  },
+  {
+    "question": "What is the weakness of vehicle patrol?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Patrolling",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ability to patrol in alarge area, can be fitted with supporting technologies,can keep security staff protected from environment"
+      },
+      {
+        "label": "B",
+        "text": "Time required to cover larger area, Physically exhausting,environment exposure"
+      },
+      {
+        "label": "C",
+        "text": "High profile may alert the criminals to an approach patrol , removes the ability to use some of human senses, Can be expensive to maintain and operate"
+      }
+    ]
+  },
+  {
+    "question": "What is the  benefits of vehicle patrol?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Patrolling",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ability to patrol in alarge area,can be fitted with supporting technologies,can keep security staff protected from environment"
+      },
+      {
+        "label": "B",
+        "text": "Time required to cover larger area, Physically exhausting,environment exposure"
+      },
+      {
+        "label": "C",
+        "text": "Enhanced situational awareness, Can use human senses,Ability to inspect closer detail, Interact with staff and members of the public"
+      }
+    ]
+  },
+  {
+    "question": "What is the weakness of Walking patrol?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Patrolling",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ability to patrol in alarge area, can be fitted with supporting technologies, can keep security staff protected from environment"
+      },
+      {
+        "label": "B",
+        "text": "Time required to cover larger area, Physically exhausting,environment exposure"
+      },
+      {
+        "label": "C",
+        "text": "Enhanced situational awareness, Can use human senses, Ability to inspect closer detail, Interact with staff and members of the public"
+      }
+    ]
+  },
+  {
+    "question": "What is the benefits of Walking patrol?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Patrolling",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ability to patrol in alarge area,can be fitted with supporting technologies,can keep security staff protected from environment"
+      },
+      {
+        "label": "B",
+        "text": "Time required to cover larger area, Physically exhausting,environment exposure"
+      },
+      {
+        "label": "C",
+        "text": "Enhanced situational awareness, Can use human senses,Ability to inspect closer detail, Interact with staff and members of the public"
+      }
+    ]
+  },
+  {
+    "question": "What is the 4 Ps of security patrol ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Patrolling",
+    "options": [
+      {
+        "label": "A",
+        "text": "Protection of life, protection of property, prevention of loss preventing crime"
+      },
+      {
+        "label": "B",
+        "text": "protection of people, protection of client, protection of customer, protection of site"
+      },
+      {
+        "label": "C",
+        "text": "protection of site, protection of people,protection of life, protection of property"
+      }
+    ]
+  },
+  {
+    "question": "If an alarm indicates in the security control room the operator duties should ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Control room Operation",
+    "options": [
+      {
+        "label": "A",
+        "text": "Identify the source of the alarm, location,of the alarm, Communicate the alarm status to the nearest security staff, instruct nearest security staff to investigate , carry out incident response, Document and record according to SOP in the site"
+      },
+      {
+        "label": "B",
+        "text": "use available video feeds to monitor the location of activities, report the location of cocernnedparties, reported the concerned parties, remain vigilant for further Safety"
+      },
+      {
+        "label": "C",
+        "text": "day to day function of the control room, deploying reserve security staff to incidentsDirecting response to safety and security  incidents , prepare incidents to security manager"
+      }
+    ]
+  },
+  {
+    "question": "The information that required when issuing a copy  of recorded images ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Control room Operation",
+    "options": [
+      {
+        "label": "A",
+        "text": "Daily system checks, Monitoring live video images , live incident tracking"
+      },
+      {
+        "label": "B",
+        "text": "Log security issues,log alarm activations , log decision made by supervisors , log potentail security issues , prepare daily reports for control room &supervisor"
+      },
+      {
+        "label": "C",
+        "text": "Date and time of the images, CCTV operator name,Camera ,Incident record number, Receiving officier number, name, contact details, signature, Date of return, security manager signature"
+      }
+    ]
+  },
+  {
+    "question": "How many methods  of physical destruction?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Control room Operation",
+    "options": [
+      {
+        "label": "A",
+        "text": "3"
+      },
+      {
+        "label": "B",
+        "text": "4"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      }
+    ]
+  },
+  {
+    "question": "for keeping security information safe must be ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Control room Operation",
+    "options": [
+      {
+        "label": "A",
+        "text": "keep In folder while out of secure storage , lock filling cabine, A safe, Access controlled archive room"
+      },
+      {
+        "label": "B",
+        "text": "use available video feeds to monitor the location of activities,report the location of cocernnedparties, reported the concerned parties,remain vigilant for further Safety"
+      },
+      {
+        "label": "C",
+        "text": "Log security issues, log alarm activations , log decision made by supervisors , log potentail security issues , prepare daily reports for control room &supervisor"
+      }
+    ]
+  },
+  {
+    "question": "To achieve a clearly transmitted message, the following points should be remembered?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Control room Operation",
+    "options": [
+      {
+        "label": "A",
+        "text": "Rhythm,Speed,Volume,Pitch"
+      },
+      {
+        "label": "B",
+        "text": "Call signs,Channels,Reporting lines with a security operation"
+      },
+      {
+        "label": "C",
+        "text": "Daily system checks,Monitoring live video images,live incident tracking"
+      }
+    ]
+  },
+  {
+    "question": "To make the communication pathways clear, a radio network diagram can be drawn to describe ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Control room Operation",
+    "options": [
+      {
+        "label": "A",
+        "text": "Call signs,Channels, Reporting lines with a security operation"
+      },
+      {
+        "label": "B",
+        "text": "Daily system checks, Monitoring live video images, live incident tracking"
+      },
+      {
+        "label": "C",
+        "text": "Log security issues, log alarm activations , log decision made by supervisors , log potentail security issues , prepare daily reports for control room &supervisor"
+      }
+    ]
+  },
+  {
+    "question": "It is unique name used to identify a person  or a position of duty within the security team?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Control room Operation",
+    "options": [
+      {
+        "label": "A",
+        "text": "Call signs"
+      },
+      {
+        "label": "B",
+        "text": "Call center"
+      },
+      {
+        "label": "C",
+        "text": "Call channel"
+      }
+    ]
+  },
+  {
+    "question": "Control room supervisor is responsible for?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Control room Operation",
+    "options": [
+      {
+        "label": "A",
+        "text": "day to day function of the control room, deploying reserve security staff to incidents,  Directing response to safety and security  incidents , prepare incidents to security manager"
+      },
+      {
+        "label": "B",
+        "text": "Daily system checks, Monitoring live video images, live incident tracking"
+      },
+      {
+        "label": "C",
+        "text": "use available video feeds to monitor the location of activities, report the location of cocernnedparties,  reported the concerned parties, remain vigilant for further Safety"
+      }
+    ]
+  },
+  {
+    "question": "Communication logs must contains to help in  investigation?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Control room Operation",
+    "options": [
+      {
+        "label": "A",
+        "text": "Rough notes"
+      },
+      {
+        "label": "B",
+        "text": "Accuracy"
+      },
+      {
+        "label": "C",
+        "text": "access lockers"
+      }
+    ]
+  },
+  {
+    "question": "The primary duties of a radio operator should include ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Control room Operation",
+    "options": [
+      {
+        "label": "A",
+        "text": "Daily system checks, Monitoring live video images, live incident tracking"
+      },
+      {
+        "label": "B",
+        "text": "use available video feeds to monitor the location of activities, report the location of cocernnedparties,  reported the concerned parties,  remain vigilant for further Safety"
+      },
+      {
+        "label": "C",
+        "text": "Equipment inspection and testing, Message sending, Message receiving , troubleshooting, frequency management"
+      }
+    ]
+  },
+  {
+    "question": "The systamatic monitoring of a certain area in a site called ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Control room Operation",
+    "options": [
+      {
+        "label": "A",
+        "text": "Video Patrolling"
+      },
+      {
+        "label": "B",
+        "text": "daily system checks"
+      },
+      {
+        "label": "C",
+        "text": "live incident tracking"
+      }
+    ]
+  },
+  {
+    "question": "To enter control room by staff they should have permission including ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Control room Operation",
+    "options": [
+      {
+        "label": "A",
+        "text": "Must have valid reason for visit, visitor access log,restricted informationon display"
+      },
+      {
+        "label": "B",
+        "text": "Maintained a list who can enter,Limited to only those who need access, regulary updated and monitored"
+      },
+      {
+        "label": "C",
+        "text": "maintained a list who can enter any time for any reason visitor access log,restricted informationon display"
+      }
+    ]
+  },
+  {
+    "question": "The location of the control room, according to the performance of the security",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Control room Operation",
+    "options": [
+      {
+        "label": "A",
+        "text": "can impact"
+      },
+      {
+        "label": "B",
+        "text": "Not impact at all"
+      },
+      {
+        "label": "C",
+        "text": "Not applicable"
+      }
+    ]
+  },
+  {
+    "question": "Public address systems can include ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Control room Operation",
+    "options": [
+      {
+        "label": "A",
+        "text": "Perimeter intrusion detection, door alarm, system information, arming and disarming of system"
+      },
+      {
+        "label": "B",
+        "text": "Analologue , Digital"
+      },
+      {
+        "label": "C",
+        "text": "Internal communication,  Building speakers, Site public address speakers"
+      }
+    ]
+  },
+  {
+    "question": "Security alarms and Sensors can include?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Control room Operation",
+    "options": [
+      {
+        "label": "A",
+        "text": "Perimeter intrusion detection, door alarm, system information, arming and disarming of system"
+      },
+      {
+        "label": "B",
+        "text": "Analologue, Digital cameras,Pan, Tilt and zoom cameras, Night vision capable"
+      },
+      {
+        "label": "C",
+        "text": "RFID, Biometric system,Electro -magnetic locks"
+      }
+    ]
+  },
+  {
+    "question": "Building management systems (BMS) can include ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Control room Operation",
+    "options": [
+      {
+        "label": "A",
+        "text": "Analogue I.P cameras,Pan,Tilt and zoom cameras,Night vision capable"
+      },
+      {
+        "label": "B",
+        "text": "Fire alarm and suppression, Elevator controls Heating,venting and cooling (HVAC) Gas sensors and alarm"
+      },
+      {
+        "label": "C",
+        "text": "RFID, Biometric system,Electro -magnetic locks"
+      }
+    ]
+  },
+  {
+    "question": "Access control systems can include ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Control room Operation",
+    "options": [
+      {
+        "label": "A",
+        "text": "Analologue,Digital I.P cameras,Pan,Tilt and zoom cameras,Night vision capable"
+      },
+      {
+        "label": "B",
+        "text": "Microwave,Infraredbeam,vibration sensor"
+      },
+      {
+        "label": "C",
+        "text": "RFID, Biometric system,Electro -magnetic locks"
+      }
+    ]
+  },
+  {
+    "question": "CCTV can  include ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Control room Operation",
+    "options": [
+      {
+        "label": "A",
+        "text": "Microwave, Infrared beam, vibration sensor"
+      },
+      {
+        "label": "B",
+        "text": "Analologue, Digital cameras, Pan,Tilt and zoom cameras, Night vision capable"
+      },
+      {
+        "label": "C",
+        "text": "Finger print,  eye scanner,  voice recognition"
+      }
+    ]
+  },
+  {
+    "question": "Examples of technologies and system that can be in control room?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Control room Operation",
+    "options": [
+      {
+        "label": "A",
+        "text": "CCTV,Access control room and parking management, Building management system,  Security alarm and sensors"
+      },
+      {
+        "label": "B",
+        "text": "Daily note book, log book, Fire extinguishers"
+      },
+      {
+        "label": "C",
+        "text": "Radio communication, note books, system for checking uniforms"
+      }
+    ]
+  },
+  {
+    "question": "In Abu Dhabi What is the authority that responsible for Monitoring standards for CCTV and Control rooms ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Control room Operation",
+    "options": [
+      {
+        "label": "A",
+        "text": "PSBD"
+      },
+      {
+        "label": "B",
+        "text": "ADMCC"
+      },
+      {
+        "label": "C",
+        "text": "OSHAD"
+      }
+    ]
+  },
+  {
+    "question": "What is RFID in Access control system stand for ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Control room Operation",
+    "options": [
+      {
+        "label": "A",
+        "text": "Radio Frequency Identification Badges"
+      },
+      {
+        "label": "B",
+        "text": "Radio Frequency Internal  badges"
+      },
+      {
+        "label": "C",
+        "text": "Radio  Fingerprint Identification Badges"
+      }
+    ]
+  },
+  {
+    "question": "Which of the following duties of the control room operator are ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Control room Operation",
+    "options": [
+      {
+        "label": "A",
+        "text": "Use electronic security locks, access badges issuesd, use a small reception area"
+      },
+      {
+        "label": "B",
+        "text": "Daily system checks, Monitoring live video images, live incident tracking"
+      },
+      {
+        "label": "C",
+        "text": "Check Uniforms of guards, Equipments and deportments"
+      }
+    ]
+  },
+  {
+    "question": "What is the law that  regulates security service providers and users,relating to the installation and use of CCTV systems for Dubai?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Control room Operation",
+    "options": [
+      {
+        "label": "A",
+        "text": "Law 37 ,2006"
+      },
+      {
+        "label": "B",
+        "text": "Law 3 of 1987"
+      },
+      {
+        "label": "C",
+        "text": "Law 24, 2008"
+      }
+    ]
+  },
+  {
+    "question": "Barries and access control,premimeter fence,physical response,land scape design are examples of",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Security Roles and responsibilities",
+    "options": [
+      {
+        "label": "A",
+        "text": "Deny"
+      },
+      {
+        "label": "B",
+        "text": "Deter"
+      },
+      {
+        "label": "C",
+        "text": "Detect"
+      }
+    ]
+  },
+  {
+    "question": "Lockdown of zones within a site,Muliple lock types,Hostile vehicle barries,distance between perimeter and vital assets",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Security Roles and responsibilities",
+    "options": [
+      {
+        "label": "A",
+        "text": "Delay"
+      },
+      {
+        "label": "B",
+        "text": "Deter"
+      },
+      {
+        "label": "C",
+        "text": "Detect"
+      }
+    ]
+  },
+  {
+    "question": "Security staff in watch,CCTV systems,Motion sensor Alarm doors are examples of ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Security Roles and responsibilities",
+    "options": [
+      {
+        "label": "A",
+        "text": "Deny"
+      },
+      {
+        "label": "B",
+        "text": "Deter"
+      },
+      {
+        "label": "C",
+        "text": "Detect"
+      }
+    ]
+  },
+  {
+    "question": "Warning signs, Brightly lit area,open spaces with good visibility,visible presence of security are example of ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Security Roles and responsibilities",
+    "options": [
+      {
+        "label": "A",
+        "text": "Deny"
+      },
+      {
+        "label": "B",
+        "text": "Deter"
+      },
+      {
+        "label": "C",
+        "text": "Delay"
+      }
+    ]
+  },
+  {
+    "question": "What is  the 4 D s in physical security ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Security Roles and responsibilities",
+    "options": [
+      {
+        "label": "A",
+        "text": "Deter, Detect, Delay, Deny"
+      },
+      {
+        "label": "B",
+        "text": "Deter, Door, Deny, Distance"
+      },
+      {
+        "label": "C",
+        "text": "Delay, Detect,  Door,  Deny"
+      }
+    ]
+  },
+  {
+    "question": "What is SIRA stand for ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Security Roles and responsibilities",
+    "options": [
+      {
+        "label": "A",
+        "text": "Safety Information Regulation Authority"
+      },
+      {
+        "label": "B",
+        "text": "Security Industry Regulatory Agency"
+      },
+      {
+        "label": "C",
+        "text": "Security Integrity Bussiness Department"
+      }
+    ]
+  },
+  {
+    "question": "What is PSBD stand for ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Security Roles and responsibilities",
+    "options": [
+      {
+        "label": "A",
+        "text": "Private Security Bussiness Deparment"
+      },
+      {
+        "label": "B",
+        "text": "Private Safety Behavior Deparment"
+      },
+      {
+        "label": "C",
+        "text": "Public Safety Bussiness Department"
+      }
+    ]
+  },
+  {
+    "question": "Security companies and security guards  in UAE except Dubai must license by?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Security Roles and responsibilities",
+    "options": [
+      {
+        "label": "A",
+        "text": "SIRA"
+      },
+      {
+        "label": "B",
+        "text": "PSBD"
+      },
+      {
+        "label": "C",
+        "text": "OSHAD"
+      }
+    ]
+  },
+  {
+    "question": "What are the main divisions of security?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Security Roles and responsibilities",
+    "options": [
+      {
+        "label": "A",
+        "text": "Police & Military"
+      },
+      {
+        "label": "B",
+        "text": "Public & Private security"
+      },
+      {
+        "label": "C",
+        "text": "Police &  companies"
+      }
+    ]
+  },
+  {
+    "question": "Wadeema law related to ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Security Roles and responsibilities",
+    "options": [
+      {
+        "label": "A",
+        "text": "Child protection law"
+      },
+      {
+        "label": "B",
+        "text": "Lady protection law"
+      },
+      {
+        "label": "C",
+        "text": "Man protection law"
+      }
+    ]
+  },
+  {
+    "question": "You as security guard can use force for self defence by ch.4 section1 article 56 penal code when?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Security Roles and responsibilities",
+    "options": [
+      {
+        "label": "A",
+        "text": "Witness him committed the crime, Identify your self, Inform the person heis under arrest, Call the Police"
+      },
+      {
+        "label": "B",
+        "text": "You face immediate danger, No time to call the police, No other means of stopping the crime, use the use of force is necessaryto stop the danger"
+      },
+      {
+        "label": "C",
+        "text": "Identify yourself, request co-operation, Call the police"
+      }
+    ]
+  },
+  {
+    "question": "When  you as security guard arresting a person committed the crime you must ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Security Roles and responsibilities",
+    "options": [
+      {
+        "label": "A",
+        "text": "Witness him committed the crime, Identify your self, Inform the person he is under arrest, Call the Police"
+      },
+      {
+        "label": "B",
+        "text": "Call the police, Identify your self,request co- operation"
+      },
+      {
+        "label": "C",
+        "text": "Identify yourself, request co-operation, Call the police"
+      }
+    ]
+  },
+  {
+    "question": "Security guard can detain if the suspect?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Security Roles and responsibilities",
+    "options": [
+      {
+        "label": "A",
+        "text": "Give permission"
+      },
+      {
+        "label": "B",
+        "text": "refuse"
+      },
+      {
+        "label": "C",
+        "text": "Not co-operate"
+      }
+    ]
+  },
+  {
+    "question": "Who have the power of Detaining Suspects by the law?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Security Roles and responsibilities",
+    "options": [
+      {
+        "label": "A",
+        "text": "Security guards"
+      },
+      {
+        "label": "B",
+        "text": "Police"
+      },
+      {
+        "label": "C",
+        "text": "The Public"
+      }
+    ]
+  },
+  {
+    "question": "The operation of private security company , licensing of the company and the security staff training requirements  all related to",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Security Roles and responsibilities",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ministerial decision 557 of 2008"
+      },
+      {
+        "label": "B",
+        "text": "Federal law no . 3of 1987"
+      },
+      {
+        "label": "C",
+        "text": "Federal law no. 3 of 2016"
+      }
+    ]
+  },
+  {
+    "question": "Professional Security can prevent crime by being on duty this known as presenting?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Security Roles and responsibilities",
+    "options": [
+      {
+        "label": "A",
+        "text": "A soft target"
+      },
+      {
+        "label": "B",
+        "text": "A hard target"
+      },
+      {
+        "label": "C",
+        "text": "A customer"
+      }
+    ]
+  },
+  {
+    "question": "Professional equipments requires?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Security Roles and responsibilities",
+    "options": [
+      {
+        "label": "A",
+        "text": "Personal hygiene,Clothing is clean,body language is positave"
+      },
+      {
+        "label": "B",
+        "text": "Will mantained and clean,stored correctly when not in use,secure from the public or potential criminals"
+      },
+      {
+        "label": "C",
+        "text": "Positive approach,Alert to allactivity,Willingness to solve problems"
+      }
+    ]
+  },
+  {
+    "question": "Examples of  un professinal behaviour ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Security Roles and responsibilities",
+    "options": [
+      {
+        "label": "A",
+        "text": "Letting amember of the staff through an access control piont without proper pass, listening to and passing on details of a private coversation"
+      },
+      {
+        "label": "B",
+        "text": "Continually reporting late for duty,eating food in a security check piont"
+      },
+      {
+        "label": "C",
+        "text": "Personal appearance,Reliability,Attitude"
+      }
+    ]
+  },
+  {
+    "question": "Examples of non ethical behaviour ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Security Roles and responsibilities",
+    "options": [
+      {
+        "label": "A",
+        "text": "Letting a member of the staff through an access control piont without proper pass, listening to and passing on details of a private coversation"
+      },
+      {
+        "label": "B",
+        "text": "Continually reporting late for duty,eating food in a security check piont"
+      },
+      {
+        "label": "C",
+        "text": "Personal appearance,Reliability,Attitude"
+      }
+    ]
+  },
+  {
+    "question": "Which Law governs Private security in UAE ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Security Roles and responsibilities",
+    "options": [
+      {
+        "label": "A",
+        "text": "Federal law no 37 of 2006"
+      },
+      {
+        "label": "B",
+        "text": "Federal law no 7 of 2017"
+      },
+      {
+        "label": "C",
+        "text": "Federal law no 24 of 1999"
+      }
+    ]
+  },
+  {
+    "question": "What is Ethics?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Security Roles and responsibilities",
+    "options": [
+      {
+        "label": "A",
+        "text": "Moral principles that guide a person behavior ,and the knowledge of what is right and wrong"
+      },
+      {
+        "label": "B",
+        "text": "A willingness to contribute to collective goals and support other"
+      },
+      {
+        "label": "C",
+        "text": "The ability to effectively understand,and be understood"
+      }
+    ]
+  },
+  {
+    "question": "What is Risk matrix?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Work place Health & Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "The removal of the hazard completely"
+      },
+      {
+        "label": "B",
+        "text": "Replace the source of the hazard"
+      },
+      {
+        "label": "C",
+        "text": "Agrid of risk scores,based on likelihood and severity of the hazard causing"
+      }
+    ]
+  },
+  {
+    "question": "What is the   Second  level in  hierarchy controls?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Work place Health & Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "PPE"
+      },
+      {
+        "label": "B",
+        "text": "Substitute"
+      },
+      {
+        "label": "C",
+        "text": "Isolate"
+      }
+    ]
+  },
+  {
+    "question": "What is the  last level in  hierarchy controls?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Work place Health & Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "PPE"
+      },
+      {
+        "label": "B",
+        "text": "Substitute"
+      },
+      {
+        "label": "C",
+        "text": "Isolate"
+      }
+    ]
+  },
+  {
+    "question": "What is the first level in  hierarchy controls?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Work place Health & Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "Eliminate"
+      },
+      {
+        "label": "B",
+        "text": "Substitute"
+      },
+      {
+        "label": "C",
+        "text": "Isolate"
+      }
+    ]
+  },
+  {
+    "question": "How many levels of Hierarchy of controls ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Work place Health & Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "3"
+      },
+      {
+        "label": "B",
+        "text": "4"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      }
+    ]
+  },
+  {
+    "question": "In risk assessment steps what is the  the fifth  step?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Work place Health & Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "Record and apply the recommendation"
+      },
+      {
+        "label": "B",
+        "text": "Review and update if required"
+      },
+      {
+        "label": "C",
+        "text": "Evaluate the risk and control measures"
+      }
+    ]
+  },
+  {
+    "question": "In risk assessment steps what is the  the fourth  step?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Work place Health & Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "Record and apply the recommendations"
+      },
+      {
+        "label": "B",
+        "text": "Identify the hazard"
+      },
+      {
+        "label": "C",
+        "text": "Evaluate the risk and control measures"
+      }
+    ]
+  },
+  {
+    "question": "In risk assessment steps what is the  the third  step?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Work place Health & Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "Who could be harmed , and how"
+      },
+      {
+        "label": "B",
+        "text": "Identify the hazard"
+      },
+      {
+        "label": "C",
+        "text": "Evaluate the risk and control measures"
+      }
+    ]
+  },
+  {
+    "question": "In risk assessment steps what is the  Second step?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Work place Health & Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "Who could be harmed , and how"
+      },
+      {
+        "label": "B",
+        "text": "Identify the hazard"
+      },
+      {
+        "label": "C",
+        "text": "Evaluate the risk and control measures"
+      }
+    ]
+  },
+  {
+    "question": "In risk assessment steps what is the first step?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Work place Health & Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "Who could be harmed , and how"
+      },
+      {
+        "label": "B",
+        "text": "Identify the hazard"
+      },
+      {
+        "label": "C",
+        "text": "Evaluate the risk and control measures"
+      }
+    ]
+  },
+  {
+    "question": "How many risk assessment steps?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Work place Health & Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "3"
+      },
+      {
+        "label": "B",
+        "text": "4"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      }
+    ]
+  },
+  {
+    "question": "What is the qualitative method in risk assessment?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Work place Health & Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "the likelihood and impactof a risk happen that  describe using a defined scale of measurement"
+      },
+      {
+        "label": "B",
+        "text": "the likelihood and impact of a risk occurring and are caculate by using statistical data"
+      },
+      {
+        "label": "C",
+        "text": "Amethodical examination of what could cause harm to people and evaluation of how hazards could be controlled"
+      }
+    ]
+  },
+  {
+    "question": "What is the quantitave method in risk assessment?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Work place Health & Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "the likelihood and impactof a risk happen that  describe using a defined scale of measurement"
+      },
+      {
+        "label": "B",
+        "text": "the likelihood and impact of a risk occurring and are caculate by using statistical data"
+      },
+      {
+        "label": "C",
+        "text": "Amethodical examination of what could cause harm to people and evaluation of how hazards could be controlled"
+      }
+    ]
+  },
+  {
+    "question": "How many Risk assessment methods ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Work place Health & Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "2"
+      },
+      {
+        "label": "B",
+        "text": "3"
+      },
+      {
+        "label": "C",
+        "text": "4"
+      }
+    ]
+  },
+  {
+    "question": "What is Risk Assessment ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Work place Health & Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "Some thing that has the potential to cause harm"
+      },
+      {
+        "label": "B",
+        "text": "The likelihood of harm, and how severe the outcome"
+      },
+      {
+        "label": "C",
+        "text": "Amethodical examination of what could cause harm to people and evaluation of how hazards could be controlled"
+      }
+    ]
+  },
+  {
+    "question": "What is MSDS stand for?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Work place Health & Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "Material Safety Data Sheet"
+      },
+      {
+        "label": "B",
+        "text": "Material Security Duty Standard"
+      },
+      {
+        "label": "C",
+        "text": "Material  Safety Data Severity"
+      }
+    ]
+  },
+  {
+    "question": "Work place inspection can carry by ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Work place Health & Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "Walking around for visual inspection, Reviewing incident and near miss record, Work task analysis,  Read MSDS"
+      },
+      {
+        "label": "B",
+        "text": "Lifting objects,  Pushing or pulling,throwing"
+      },
+      {
+        "label": "C",
+        "text": "Walking into furniture, low hanging structure, protrusions along a pathway"
+      }
+    ]
+  },
+  {
+    "question": "Psycho - Social hazard can be ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Work place Health & Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "Stress, Violence, Drugs or Alcohol abuse"
+      },
+      {
+        "label": "B",
+        "text": "Work shop tools, office equipment, Industrial machines,  Trucks &buses, Forklift bulldozer & crane"
+      },
+      {
+        "label": "C",
+        "text": "Walking into furniture,  low hanging structure,  protrusions along a pathway"
+      }
+    ]
+  },
+  {
+    "question": "Noise and Vibration hazard can be ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Work place Health & Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "Loud machinery, Long exposure to high noise levels, Vibrationof hand tools"
+      },
+      {
+        "label": "B",
+        "text": "Work shop tools, office equipment, Industrial machines, Trucks &buses, Forklift bulldozer & crane"
+      },
+      {
+        "label": "C",
+        "text": "Walking into furniture, low hanging structure,  protrusions along a pathway"
+      }
+    ]
+  },
+  {
+    "question": "Collision with objects hazard can be ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Work place Health & Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "Lifting objects, Pushing or pulling, throwing"
+      },
+      {
+        "label": "B",
+        "text": "Work shop tools,office equipment, Industrial machines, Trucks &buses, Forklift bulldozer & crane"
+      },
+      {
+        "label": "C",
+        "text": "Walking into furniture, low hanging structure, protrusions along a pathway"
+      }
+    ]
+  },
+  {
+    "question": "Machinery & Vehicles hazard can be ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Work place Health & Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "Lifting objects, Pushing or pulling, throwing"
+      },
+      {
+        "label": "B",
+        "text": "Work shop tools,office equipment, Industrial machines, Trucks &buses, Forklift bulldozer & crane"
+      },
+      {
+        "label": "C",
+        "text": "Over loaded power sockets, Faulty installation, wear & tear of wiring"
+      }
+    ]
+  },
+  {
+    "question": "Manual handling hazard can be ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Work place Health & Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "Lifting objects,  Pushing or pulling, throwing"
+      },
+      {
+        "label": "B",
+        "text": "Breaks , tiles,Roofing material , Air condition fitting"
+      },
+      {
+        "label": "C",
+        "text": "Over loaded power sockets, Faulty installation, wear & tear of wiring"
+      }
+    ]
+  },
+  {
+    "question": "Electricity hazard can be ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Work place Health & Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "Wet surfaces, Loose cables,Uneven surfaces, inappropriate footwear"
+      },
+      {
+        "label": "B",
+        "text": "Breaks , tiles,Roofing material, Air condition fitting"
+      },
+      {
+        "label": "C",
+        "text": "Over loaded power sockets, Faulty installation, wear & tear of wiring"
+      }
+    ]
+  },
+  {
+    "question": "Falling Objects can be ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Work place Health & Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "Wet surfaces, Loose cables,Uneven surfaces,inappropriate footwear"
+      },
+      {
+        "label": "B",
+        "text": "Breaks ,tiles,Roofing material,Air condition fitting"
+      },
+      {
+        "label": "C",
+        "text": "Door & door frame ,caught in machinery"
+      }
+    ]
+  },
+  {
+    "question": "Examples of Slips, trips falls?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Work place Health & Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "Wet surfaces, Loose cables , Uneven surfaces ,inappropriate footwear"
+      },
+      {
+        "label": "B",
+        "text": "Breaks , tiles,Roofing material, Air condition fitting"
+      },
+      {
+        "label": "C",
+        "text": "Door & door frame , caught in machinery"
+      }
+    ]
+  },
+  {
+    "question": "Whats is the health & safety in Abu Dhabi governing by?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Work place Health & Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "NEPOCH"
+      },
+      {
+        "label": "B",
+        "text": "SPHSA"
+      },
+      {
+        "label": "C",
+        "text": "OSHAD"
+      }
+    ]
+  },
+  {
+    "question": "What is Risk?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Work place Health & Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "Some thing that has the potential to cause harm"
+      },
+      {
+        "label": "B",
+        "text": "The likelihood of harm, and how severe the outcome"
+      },
+      {
+        "label": "C",
+        "text": "The probability of harm taking place"
+      }
+    ]
+  },
+  {
+    "question": "What is Hazard?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Work place Health & Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "Some thing that has the potential to cause harm"
+      },
+      {
+        "label": "B",
+        "text": "The likelihood of harm, and how severe the outcome"
+      },
+      {
+        "label": "C",
+        "text": "The probability of harm taking place"
+      }
+    ]
+  },
+  {
+    "question": "If you work as CCTV opeator and alarm system for fire works, What should you do?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Fire Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "you should call the Supervisor"
+      },
+      {
+        "label": "B",
+        "text": "you should focus the camera in the area that the alarm happened and send the guard in the same area to ckeck it is real or false alarm"
+      },
+      {
+        "label": "C",
+        "text": "you should call your CEO"
+      }
+    ]
+  },
+  {
+    "question": "What is the pre determined location  designated to evacuate in case of emergency ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Fire Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "Control room"
+      },
+      {
+        "label": "B",
+        "text": "Assembly point"
+      },
+      {
+        "label": "C",
+        "text": "Control Panal"
+      }
+    ]
+  },
+  {
+    "question": "When responding to fire you should Know RACE what It is stand for?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Fire Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "Rescue, Alert, Confine, Extinguish"
+      },
+      {
+        "label": "B",
+        "text": "Run,  All,capacity, Extinguish"
+      },
+      {
+        "label": "C",
+        "text": "Run, Alert, confine, Extinguish"
+      }
+    ]
+  },
+  {
+    "question": "What is your instrucion to one person is caught by fire?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Fire Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "Stop, Drop , Roll"
+      },
+      {
+        "label": "B",
+        "text": "Run as Possible as you can"
+      },
+      {
+        "label": "C",
+        "text": "Use fire extinguisherto kill the fire"
+      }
+    ]
+  },
+  {
+    "question": "Which class is  electrical  belongs to?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Fire Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "A"
+      },
+      {
+        "label": "B",
+        "text": "C"
+      },
+      {
+        "label": "C",
+        "text": "E"
+      }
+    ]
+  },
+  {
+    "question": "Which class is  Sodium &  Potassium  belongs to?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Fire Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "A"
+      },
+      {
+        "label": "B",
+        "text": "C"
+      },
+      {
+        "label": "C",
+        "text": "D"
+      }
+    ]
+  },
+  {
+    "question": "Which class is  Methane& butane  belongs to?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Fire Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "B"
+      },
+      {
+        "label": "B",
+        "text": "C"
+      },
+      {
+        "label": "C",
+        "text": "D"
+      }
+    ]
+  },
+  {
+    "question": "Which class is  Petrol &  Paints belongs to?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Fire Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "A"
+      },
+      {
+        "label": "B",
+        "text": "B"
+      },
+      {
+        "label": "C",
+        "text": "C"
+      }
+    ]
+  },
+  {
+    "question": "Which class  is wood & plastic belongs to?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Fire Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "A"
+      },
+      {
+        "label": "B",
+        "text": "B"
+      },
+      {
+        "label": "C",
+        "text": "C"
+      }
+    ]
+  },
+  {
+    "question": "When using fire extinguisher you should remmber PASS , what is it stand for?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Fire Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "Pull, Aim, Squeeze, Sweep"
+      },
+      {
+        "label": "B",
+        "text": "Pull, Agent, Sweep, Stream"
+      },
+      {
+        "label": "C",
+        "text": "pull, Aim, Stream, Sweep"
+      }
+    ]
+  },
+  {
+    "question": "What is danger to use on electrical fire?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Fire Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "Water"
+      },
+      {
+        "label": "B",
+        "text": "Co2"
+      },
+      {
+        "label": "C",
+        "text": "DCP"
+      }
+    ]
+  },
+  {
+    "question": "How many classification of fire?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Fire Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "2"
+      },
+      {
+        "label": "B",
+        "text": "3"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      }
+    ]
+  },
+  {
+    "question": "Which colour is used to identify CO2 extinguisher?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Fire Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "Red"
+      },
+      {
+        "label": "B",
+        "text": "Black"
+      },
+      {
+        "label": "C",
+        "text": "Blue"
+      }
+    ]
+  },
+  {
+    "question": "Which colour is used to identify dry powder extinguisher?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Fire Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "RED"
+      },
+      {
+        "label": "B",
+        "text": "Blue"
+      },
+      {
+        "label": "C",
+        "text": "Black"
+      }
+    ]
+  },
+  {
+    "question": "Examples of Fixed equipments used to kill the fire  ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Fire Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "Fire extinguisher, fire blanket,fire bucket ( sand, Powder )"
+      },
+      {
+        "label": "B",
+        "text": "Sprinkler system, hose reels, hydrants"
+      },
+      {
+        "label": "C",
+        "text": "Fire extinguisher, hydrants, fire blanket"
+      }
+    ]
+  },
+  {
+    "question": "Examples of Portable equipments used to kill the fire  ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Fire Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "Fire extinguisher, fire blanket, fire bucket ( sand, Powder )"
+      },
+      {
+        "label": "B",
+        "text": "Sprinkler system, hose reels, hydrants"
+      },
+      {
+        "label": "C",
+        "text": "Fire extinguisher, hydrants, hose reels"
+      }
+    ]
+  },
+  {
+    "question": "A lit cigarette dropped into a rubbish bin is example of?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Fire Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "Convection"
+      },
+      {
+        "label": "B",
+        "text": "Direct burning"
+      },
+      {
+        "label": "C",
+        "text": "Radiation"
+      }
+    ]
+  },
+  {
+    "question": "The heat from the sun that can make fuel ignite and burn is example of ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Fire Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "Convection"
+      },
+      {
+        "label": "B",
+        "text": "Conduction"
+      },
+      {
+        "label": "C",
+        "text": "Radiation"
+      }
+    ]
+  },
+  {
+    "question": "A metal rod that left with one end in a fire it is example of?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Fire Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "Convection"
+      },
+      {
+        "label": "B",
+        "text": "Conduction"
+      },
+      {
+        "label": "C",
+        "text": "Direct burning"
+      }
+    ]
+  },
+  {
+    "question": "When there is fire burns and the hot gases rises and collect in the contained spaces  to start the fire it called?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Fire Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "Convection"
+      },
+      {
+        "label": "B",
+        "text": "Conduction"
+      },
+      {
+        "label": "C",
+        "text": "Radiation"
+      }
+    ]
+  },
+  {
+    "question": "What are the three methods for controlling the fire?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Fire Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "fuel , heat, oxgyen"
+      },
+      {
+        "label": "B",
+        "text": "Starving,  Cooling, Smothering"
+      },
+      {
+        "label": "C",
+        "text": "Conduction, Radiation, Convection"
+      }
+    ]
+  },
+  {
+    "question": "When you remove any elements of fire fire can be ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Fire Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "Killed"
+      },
+      {
+        "label": "B",
+        "text": "Raised"
+      },
+      {
+        "label": "C",
+        "text": "None of the above is correct"
+      }
+    ]
+  },
+  {
+    "question": "How many percentage  of fire causes by  Smoking of cigarette  ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "Fire Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "20"
+      },
+      {
+        "label": "C",
+        "text": "25"
+      }
+    ]
+  },
+  {
+    "question": "What is the avarage response time  to reach from  the  Fire Emergency services vehicles in UAE?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Fire Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "2 -3 minutes"
+      },
+      {
+        "label": "B",
+        "text": "10 -15 minutes"
+      },
+      {
+        "label": "C",
+        "text": "3 -4 minutes"
+      }
+    ]
+  },
+  {
+    "question": "Fire can double in size  in how many ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Fire Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "1 minute"
+      },
+      {
+        "label": "B",
+        "text": "40 seconds"
+      },
+      {
+        "label": "C",
+        "text": "2 minutes"
+      }
+    ]
+  },
+  {
+    "question": "What is the elements of fire ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "Fire Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "Feul, Heat, Oxgyen"
+      },
+      {
+        "label": "B",
+        "text": "Wood, Gas, Powder"
+      },
+      {
+        "label": "C",
+        "text": "Water, Oxgyen, Fuel"
+      }
+    ]
+  },
+  {
+    "question": "How many elements of Fire ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "Fire Safety",
+    "options": [
+      {
+        "label": "A",
+        "text": "2"
+      },
+      {
+        "label": "B",
+        "text": "3"
+      },
+      {
+        "label": "C",
+        "text": "4"
+      }
+    ]
+  },
+  {
+    "question": "When handling the casuality to emergency services,  your responsibility to do?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "First Aid",
+    "options": [
+      {
+        "label": "A",
+        "text": "Take rest and reax and go home"
+      },
+      {
+        "label": "B",
+        "text": "highlight any hazards present at the scene, Report the casuality condition for any treatment given"
+      },
+      {
+        "label": "C",
+        "text": "you should go with the casuality to the hospital as  a witness"
+      }
+    ]
+  },
+  {
+    "question": "What is  the treatment of Choking?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "First Aid",
+    "options": [
+      {
+        "label": "A",
+        "text": "lean the casuality forward, use your heel of your hand to give 5 sharp slaps between shoulder blades"
+      },
+      {
+        "label": "B",
+        "text": "Lean the casuality back,do not move him"
+      },
+      {
+        "label": "C",
+        "text": "Lean the casuality in neutral Position until medical help arrive"
+      }
+    ]
+  },
+  {
+    "question": "What is CPR  that you should start with unconscious casuality stand for ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "First Aid",
+    "options": [
+      {
+        "label": "A",
+        "text": "Casuality position Recovery"
+      },
+      {
+        "label": "B",
+        "text": "Cardio Plumonary Resuscitation"
+      },
+      {
+        "label": "C",
+        "text": "Cardio Position Recovery"
+      }
+    ]
+  },
+  {
+    "question": "What is the information you should ask the concious casuality before medical help arrive ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "First Aid",
+    "options": [
+      {
+        "label": "A",
+        "text": "His social Status, location of his house, His medical history"
+      },
+      {
+        "label": "B",
+        "text": "Allergies, Medication, Previous conditions, last meal and Event history"
+      },
+      {
+        "label": "C",
+        "text": "His age, social status, last meal,"
+      }
+    ]
+  },
+  {
+    "question": "What is your  action if the casuality is bleeding from nose ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "First Aid",
+    "options": [
+      {
+        "label": "A",
+        "text": "You should raise his nose up not to let the blood fall down"
+      },
+      {
+        "label": "B",
+        "text": "You should let the casuality nose down and  pinch his nose to stop the blood"
+      },
+      {
+        "label": "C",
+        "text": "You should not touch the bleeding nose at all"
+      }
+    ]
+  },
+  {
+    "question": "What is E  in AED that is used for unconscious casuality  means ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "First Aid",
+    "options": [
+      {
+        "label": "A",
+        "text": "External"
+      },
+      {
+        "label": "B",
+        "text": "Electrical"
+      },
+      {
+        "label": "C",
+        "text": "Emergency"
+      }
+    ]
+  },
+  {
+    "question": "What is your priority in case the casuslity has Spinal injury ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "First Aid",
+    "options": [
+      {
+        "label": "A",
+        "text": "Stop the casuality from moving"
+      },
+      {
+        "label": "B",
+        "text": "Let the casuality move to his home"
+      },
+      {
+        "label": "C",
+        "text": "Let the casuality move to  his work"
+      }
+    ]
+  },
+  {
+    "question": "What is the symptons of Spinal injury?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "First Aid",
+    "options": [
+      {
+        "label": "A",
+        "text": "Falling from height, Diving into pool, hit by  a heavy object"
+      },
+      {
+        "label": "B",
+        "text": "Heart Failure, Severe bleeding, Dehydration,  Severe infection"
+      },
+      {
+        "label": "C",
+        "text": "Pain in  neck or back, Twisted shape of the spine,  Bruising of the skin over the Spine"
+      }
+    ]
+  },
+  {
+    "question": "What is causes of Spinal injury?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "First Aid",
+    "options": [
+      {
+        "label": "A",
+        "text": "Falling from height, Diving into pool, hit by  a heavy object"
+      },
+      {
+        "label": "B",
+        "text": "Pale face, cold skin, cofusion"
+      },
+      {
+        "label": "C",
+        "text": "Heart Failure, Severe bleeding, Dehydration, Severe infection"
+      }
+    ]
+  },
+  {
+    "question": "What is your action if there is minor injured with the casuality ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "First Aid",
+    "options": [
+      {
+        "label": "A",
+        "text": "leave it do not touch"
+      },
+      {
+        "label": "B",
+        "text": "clean the wound and apply dressing to the wound"
+      },
+      {
+        "label": "C",
+        "text": "Call your Supervisor for help"
+      }
+    ]
+  },
+  {
+    "question": "What is your action if there is an object stuck in the wound?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "First Aid",
+    "options": [
+      {
+        "label": "A",
+        "text": "you should remove it  immediately"
+      },
+      {
+        "label": "B",
+        "text": "do not remove at all"
+      },
+      {
+        "label": "C",
+        "text": "It is up to you to remove or leave"
+      }
+    ]
+  },
+  {
+    "question": "What is the symptoms of Shock?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "First Aid",
+    "options": [
+      {
+        "label": "A",
+        "text": "Pale face,cold skin,cofusion"
+      },
+      {
+        "label": "B",
+        "text": "Heart Failure,Severe bleeding,Dehydration, Severe infection"
+      },
+      {
+        "label": "C",
+        "text": "Falling from height,Diving into pool,hit by  a heavy object"
+      }
+    ]
+  },
+  {
+    "question": "What is  the factors that can make Shock ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "First Aid",
+    "options": [
+      {
+        "label": "A",
+        "text": "Heart Failure,Severe bleeding,Dehydration, Severe infection"
+      },
+      {
+        "label": "B",
+        "text": "Pale face,cold skin,cofusion"
+      },
+      {
+        "label": "C",
+        "text": "Falling from height,Diving into pool,hit by  a heavy object"
+      }
+    ]
+  },
+  {
+    "question": "What is the aim of the recovery position to the casuality ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "First Aid",
+    "options": [
+      {
+        "label": "A",
+        "text": "To make the casuality relax"
+      },
+      {
+        "label": "B",
+        "text": "to keep an unconscious casuality airway open and allow normal breathing"
+      },
+      {
+        "label": "C",
+        "text": "To make the casuality feel by people around him"
+      }
+    ]
+  },
+  {
+    "question": "What is the reason for not to touch the casuality during AED?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "First Aid",
+    "options": [
+      {
+        "label": "A",
+        "text": "Not to disrurb the Casuality"
+      },
+      {
+        "label": "B",
+        "text": "As it will interfere with electrical signals"
+      },
+      {
+        "label": "C",
+        "text": "As it will  cause trouble to breathing of casuality"
+      }
+    ]
+  },
+  {
+    "question": "What is AED stand for ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "First Aid",
+    "options": [
+      {
+        "label": "A",
+        "text": "Automated External Defibrillator"
+      },
+      {
+        "label": "B",
+        "text": "Automated Exceed Danger"
+      },
+      {
+        "label": "C",
+        "text": "Automated Except Defibillation"
+      }
+    ]
+  },
+  {
+    "question": "How many compression to breathing when  Starting CPR rqeuires?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "First Aid",
+    "options": [
+      {
+        "label": "A",
+        "text": "20 -2"
+      },
+      {
+        "label": "B",
+        "text": "30 -3"
+      },
+      {
+        "label": "C",
+        "text": "30 -2"
+      }
+    ]
+  },
+  {
+    "question": "What is ABCD in primary care for the casuality stand for?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "First Aid",
+    "options": [
+      {
+        "label": "A",
+        "text": "Airway, Babies,Call,Defibrillation"
+      },
+      {
+        "label": "B",
+        "text": "Airway, Breathing, Circulation,Defibrillation"
+      },
+      {
+        "label": "C",
+        "text": "Airway, Before,Chemical, Danger"
+      }
+    ]
+  },
+  {
+    "question": "What is AVPU in determining level of consciousness of the casuality stand for ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "First Aid",
+    "options": [
+      {
+        "label": "A",
+        "text": "Alert, Voice,Pain and Unresponsive"
+      },
+      {
+        "label": "B",
+        "text": "Alert, voice, pulse,and Urine"
+      },
+      {
+        "label": "C",
+        "text": "Alert, Vault, Place, and Unconscious"
+      }
+    ]
+  },
+  {
+    "question": "Who is the First Aider ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "First Aid",
+    "options": [
+      {
+        "label": "A",
+        "text": "A person who can help all people in Emergency"
+      },
+      {
+        "label": "B",
+        "text": "A person who can acess to the site"
+      },
+      {
+        "label": "C",
+        "text": "A person who provides first help to casualities before medical help arrive"
+      }
+    ]
+  },
+  {
+    "question": "What is your priority in case the casualty has major bleeding ?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "First Aid",
+    "options": [
+      {
+        "label": "A",
+        "text": "Leave  the casualty to call for help"
+      },
+      {
+        "label": "B",
+        "text": "call your manger and write your report"
+      },
+      {
+        "label": "C",
+        "text": "Call 999 for medical help treat by put a pad and make pressure if still bleeding  put other pad do not remove any pad until help come"
+      }
+    ]
+  },
+  {
+    "question": "BLS in First Aid  Stand for:",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "A",
+    "points": 2,
+    "Category": "First Aid",
+    "options": [
+      {
+        "label": "A",
+        "text": "Basic Life Support"
+      },
+      {
+        "label": "B",
+        "text": "Basic learning Survey"
+      },
+      {
+        "label": "C",
+        "text": "Basic level  of Safety"
+      }
+    ]
+  },
+  {
+    "question": "What is the aim of First Aid?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "B",
+    "points": 2,
+    "Category": "First Aid",
+    "options": [
+      {
+        "label": "A",
+        "text": "Protect peopl,property and Information"
+      },
+      {
+        "label": "B",
+        "text": "preserve life, prevent further harm, promote recovery"
+      },
+      {
+        "label": "C",
+        "text": "protect client,protect customers, protect public"
+      }
+    ]
+  },
+  {
+    "question": "What is the First Aid?",
+    "quastionCategory": "Multiple choice",
+    "correctAnswer": "C",
+    "points": 2,
+    "Category": "First Aid",
+    "options": [
+      {
+        "label": "A",
+        "text": "The medical  procedure given later in the hospital"
+      },
+      {
+        "label": "B",
+        "text": "Helping all people in case of Emergency"
+      },
+      {
+        "label": "C",
+        "text": "The immediate care given to a casualty until qualified medical person can take over"
+      }
+    ]
+  }
+]
