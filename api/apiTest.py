@@ -75,6 +75,7 @@ def secure_route():
 
     
 
+#this function will return all the groups in my DB without redundancy
 @app.route('/unique_groups', methods=['GET'])
 def get_unique_groups():
     try:
@@ -93,6 +94,69 @@ def get_unique_groups():
 
     except Exception as e:
         return jsonify({"error": str(e)})
+
+
+# this function returns all the students for specific group 
+@app.route('/getStudentsData', methods=['GET'])
+def get_students_data():
+    # MongoDB connection
+    client = MongoClient('mongodb://localhost:27017/')
+    db = client['local']  # Use your MongoDB database name
+    students_collection = db['students']  # Use your collection name
+    # Get the group parameter from the request
+    group = request.args.get('group')
+    # Check if the 'group' parameter is provided
+    if not group:
+        return jsonify({"error": "Group parameter is required"}), 400
+
+    # Query the MongoDB collection to find students in the specified group
+    students_in_group = students_collection.find({"Groups": group})
+
+    # Create a list to store the results
+    results = []
+
+    # Iterate through the matching documents and extract the relevant data
+    for student in students_in_group:
+        student_data = {
+            "_id": str(student['_id']),
+            "Name": student['Name'],
+            "ID": student['ID'],
+            "Class": student['Class'],
+            "Nationality": student['Nationality'],
+            "Seat": student['Seat'],
+            "Groups": student['Groups']
+        }
+        results.append(student_data)
+
+    return jsonify(results)
+
+# this function will return the first 50 student 
+@app.route('/getFirst50Students', methods=['GET'])
+def get_first_50_students():
+    # MongoDB connection
+    client = MongoClient('mongodb://localhost:27017/')
+    db = client['local']  # Use your MongoDB database name
+    students_collection = db['students']  # Use your collection name
+    # Query the MongoDB collection to find the first 50 students
+    students = students_collection.find().limit(50)
+
+    # Create a list to store the results
+    results = []
+
+    # Iterate through the matching documents and extract the relevant data
+    for student in students:
+        student_data = {
+            "_id": str(student['_id']),
+            "Name": student['Name'],
+            "ID": student['ID'],
+            "Class": student['Class'],
+            "Nationality": student['Nationality'],
+            "Seat": student['Seat'],
+            "Groups": student['Groups']
+        }
+        results.append(student_data)
+
+    return jsonify(results)
 
 
 

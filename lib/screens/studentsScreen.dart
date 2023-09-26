@@ -5,6 +5,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../models/staticVars.dart';
+import '../widget/button.dart';
+import '../widget/button2.dart';
 import '../widget/sideBar.dart';
 import 'package:http/http.dart' as http;
 
@@ -18,6 +20,21 @@ class studentsScreen extends StatefulWidget {
 }
 
 class _studentsScreenState extends State<studentsScreen> {
+  List<dynamic> students = []; // List to store student data
+  List<dynamic> selectedStudents = [];
+  bool filter = false;
+
+  String filterBy = '';
+
+  ScrollController _scrollController = ScrollController();
+  List<bool> selectedItems = []; // Initialize with all items unselected
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    fetchFirst50Students();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -45,25 +62,18 @@ class _studentsScreenState extends State<studentsScreen> {
                   SizedBox(
                     height: 10,
                   ),
-                  Container(
-                    height: 40,
-                    width: 200,
-                    padding: EdgeInsets.all(12),
-                    decoration: BoxDecoration(
-                        color: Color.fromRGBO(60, 143, 60, 1),
-                        borderRadius: BorderRadius.circular(30)),
-                    child: Center(
-                        child: Text(
-                      'New root group',
-                      style: TextStyle(
-                        color: Colors.white,
-                      ),
-                    )),
+                  button2(
+                    onTap: () {},
+                    txt: 'New root group',
                   ),
                   Padding(
                     padding: const EdgeInsets.all(16.0),
                     child: TextField(
                       onChanged: (value) {
+
+                        this.filter = true;
+                        this.filterBy = value;
+
                         setState(() {});
                       },
                       decoration: InputDecoration(
@@ -92,23 +102,76 @@ class _studentsScreenState extends State<studentsScreen> {
                         return Container(
                           width: MediaQuery.of(context).size.width * .15,
                           height: MediaQuery.of(context).size.height - 300,
-                          child: ListView.builder(
-                            itemCount: snapshot.data!.length,
-                            // Number of items in the list
-                            itemBuilder: (BuildContext context, int index) {
-                              return ListTile(
-                                title: Text(snapshot.data![index].toString()),
-                                leading: Icon(Icons.folder),
-                                // You can use any widget as leading
+                          child: this.filter
+                              ? ListView.builder(
+                                  key: PageStorageKey('studentList'),
+                                  // Set a key
+                                  controller: _scrollController,
+                                  // Use a ScrollController
+                                  itemCount: snapshot.data!
+                                      .where((classOrGroup) => classOrGroup
+                                          .toLowerCase()
+                                          .contains(
+                                              this.filterBy.toUpperCase()))
+                                      .toList()
+                                      .length,
+                                  // Number of items in the list
+                                  itemBuilder:
+                                      (BuildContext context, int index) {
+                                    return ListTile(
+                                      title: Text(snapshot.data!
+                                          .where((classOrGroup) => classOrGroup
+                                              .toLowerCase()
+                                              .contains(
+                                                  this.filterBy.toUpperCase()))
+                                          .toList()[index]
+                                          .toString()),
+                                      leading: Icon(Icons.folder),
+                                      // You can use any widget as leading
+                                      onTap: () async {
+                                        // Handle tap on the item
+                                        // You can navigate to a new screen or perform other actions here
 
-                                onTap: () {
-                                  // Handle tap on the item
-                                  // You can navigate to a new screen or perform other actions here
-                                  print('Tapped on Item $index');
-                                },
-                              );
-                            },
-                          ),
+                                        await getStudentsData(snapshot.data!
+                                            .where((classOrGroup) =>
+                                                classOrGroup
+                                                    .toLowerCase()
+                                                    .contains(this
+                                                        .filterBy
+                                                        .toUpperCase()))
+                                            .toList()[index]
+                                            .toString());
+                                      },
+                                    );
+                                  },
+                                )
+                              : ListView.builder(
+                                  key: PageStorageKey('studentList'),
+                                  // Set a key
+                                  controller: _scrollController,
+                                  // Use a ScrollController
+                                  itemCount: snapshot.data!.length,
+                                  // Number of items in the list
+                                  itemBuilder:
+                                      (BuildContext context, int index) {
+                                    return ListTile(
+                                      title: Text(
+                                          snapshot.data![index].toString()),
+                                      leading: Icon(Icons.folder),
+                                      // You can use any widget as leading
+                                      onTap: () async {
+                                        // Handle tap on the item
+                                        // You can navigate to a new screen or perform other actions here
+                                        if (index == 0) {
+                                          await fetchFirst50Students();
+                                          return;
+                                        }
+                                        await getStudentsData(
+                                            snapshot.data![index].toString());
+                                      },
+                                    );
+                                  },
+                                ),
                         );
                       }
                     },
@@ -121,20 +184,13 @@ class _studentsScreenState extends State<studentsScreen> {
             right: 10,
             bottom: 30,
             child: Container(
-              height:MediaQuery.of(context).size.height - 200 ,
-              width: MediaQuery.of(context).size.width - 500 ,
+              height: MediaQuery.of(context).size.height - 200,
+              width: MediaQuery.of(context).size.width - 500,
               decoration: BoxDecoration(
-                border: Border.all(color: Colors.black),
-                borderRadius: BorderRadius.circular(30)
-              ),
+                  border: Border.all(color: Colors.black),
+                  borderRadius: BorderRadius.circular(30)),
               child: DataTable2(
                 columns: [
-                  DataColumn(
-                    label: Center(child: Text('select')),
-                  ),
-                  DataColumn(
-                    label: Center(child: Text('No')),
-                  ),
                   DataColumn(
                     label: Center(child: Text('Name')),
                   ),
@@ -151,7 +207,88 @@ class _studentsScreenState extends State<studentsScreen> {
                     label: Center(child: Text('Action')),
                   ),
                 ],
-                rows: [],
+                rows: this.students.map(
+                  (e) {
+                    return DataRow2.byIndex(
+                        index: this.students.indexOf(e),
+                        // Use the index of the student
+                        selected: selectedStudents.contains(e),
+                        onSelectChanged: (isSelected) {
+                          setState(() {
+                            if (isSelected == true) {
+                              selectedStudents.add(
+                                  e); // Add the student to the selected list
+                            } else {
+                              selectedStudents.remove(
+                                  e); // Remove the student from the selected list
+                            }
+                          });
+                        },
+                        cells: [
+                          // DataCell(Text( (this.students.length - (this.students.length - 1)).toString())) ,
+                          DataCell(Center(child: Text(e['Name']))),
+                          DataCell(Center(child: Text(e['ID']))),
+                          DataCell(Center(child: Text(e['Class']))),
+                          DataCell(Center(child: Text(e['Groups'].toString()))),
+                          DataCell(Center(child: Text('Action'))),
+                        ]);
+                  },
+                ).toList(),
+              ),
+            ),
+          ),
+          Positioned(
+            right: 220,
+            top: 10,
+            child: Container(
+              height: 100,
+              width: MediaQuery.of(context).size.width - 700,
+              decoration: BoxDecoration(
+                  //  border: Border.all(color: Colors.black),
+                  borderRadius: BorderRadius.circular(30)),
+              child: Padding(
+                padding: const EdgeInsets.all(5.0),
+                child: Row(
+                  children: [
+                    Column(
+                      children: [
+                        button2(txt: 'Add new student', onTap: () {}),
+                        SizedBox(
+                          height: 4,
+                        ),
+                        button2(txt: 'Import batch', onTap: () {}),
+                      ],
+                    ),
+                    SizedBox(
+                      width: 5,
+                    ),
+                    Column(
+                      children: [
+                        button2(
+                            txt: 'add to more than one group', onTap: () {}),
+                      ],
+                    )
+                  ],
+                ),
+              ),
+            ),
+          ),
+          Positioned(
+            right: 10,
+            top: 10,
+            child: Container(
+              width: 250,
+              height: 100,
+              padding: const EdgeInsets.all(16.0),
+              child: TextField(
+                onChanged: (value) {},
+                decoration: InputDecoration(
+                  hintText: 'Search student',
+                  prefixIcon: Icon(Icons.search),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(10.0),
+                  ),
+                ),
               ),
             ),
           ),
@@ -163,6 +300,7 @@ class _studentsScreenState extends State<studentsScreen> {
     );
   }
 
+  // this funtion will returns all the classes gorups
   Future<List<String>> classesNumbers() async {
     final response =
         await http.get(Uri.parse('http://127.0.0.1:5000/unique_groups'));
@@ -170,9 +308,45 @@ class _studentsScreenState extends State<studentsScreen> {
     if (response.statusCode == 200) {
       final data = json.decode(response.body);
       //print(List<String>.from(data['unique_groups']));
-      return List<String>.from(data['unique_groups']);
+      List<String> res = List<String>.from(data['unique_groups']);
+      res.add("All students");
+      List<String> reversedList = new List.from(res.reversed);
+      //return List<String>.from(data['unique_groups']);
+      return reversedList;
     } else {
       throw Exception('Failed to load data');
+    }
+  }
+
+  // this function will returnst all the students (the first 50 ones)
+  Future<List<dynamic>> fetchFirst50Students() async {
+    final response =
+        await http.get(Uri.parse('http://localhost:5000/getFirst50Students'));
+
+    if (response.statusCode == 200) {
+      final List<dynamic> data = json.decode(response.body);
+      this.students = data;
+      setState(() {});
+      //print(data);
+      return data;
+    } else {
+      throw Exception('Failed to load students');
+    }
+  }
+
+  // this function will returns all the students that belong to specific group
+  Future<void> getStudentsData(String group) async {
+    final response = await http.get(Uri.parse(
+        'http://localhost:5000/getStudentsData?group=' +
+            group)); // Replace with your API endpoint
+
+    if (response.statusCode == 200) {
+      final List<dynamic> data = json.decode(response.body);
+      setState(() {
+        students = data;
+      });
+    } else {
+      throw Exception('Failed to load students');
     }
   }
 }
