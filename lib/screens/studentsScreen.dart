@@ -1,11 +1,9 @@
 import 'dart:convert';
-
 import 'package:data_table_2/data_table_2.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
 import '../models/staticVars.dart';
-import '../widget/button.dart';
+import '../widget/addStudentPopUp.dart';
 import '../widget/button2.dart';
 import '../widget/sideBar.dart';
 import 'package:http/http.dart' as http;
@@ -252,7 +250,15 @@ class _studentsScreenState extends State<studentsScreen> {
                   children: [
                     Column(
                       children: [
-                        button2(txt: 'Add new student', onTap: () {}),
+                        button2(txt: 'Add new student', onTap: () {
+                          showDialog(
+                            context: context,
+                            builder: (BuildContext context) {
+                              return StudentRegistrationDialog();
+                            },
+                          );
+
+                        }),
                         SizedBox(
                           height: 4,
                         ),
@@ -265,7 +271,7 @@ class _studentsScreenState extends State<studentsScreen> {
                     Column(
                       children: [
                         button2(
-                            txt: 'add to more than one group', onTap: () {}),
+                            txt: 'Move to more than one group', onTap: () {}),
                       ],
                     )
                   ],
