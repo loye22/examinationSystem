@@ -1,12 +1,16 @@
 import 'dart:convert';
+import 'dart:io';
 import 'package:data_table_2/data_table_2.dart';
+import 'package:file_picker/file_picker.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:tsti_exam_sys/models/Dialog.dart';
 import '../models/staticVars.dart';
 import '../widget/addStudentPopUp.dart';
 import '../widget/button2.dart';
 import '../widget/sideBar.dart';
 import 'package:http/http.dart' as http;
+
 
 class studentsScreen extends StatefulWidget {
   static const routeName = '/logInScreen';
@@ -21,7 +25,7 @@ class _studentsScreenState extends State<studentsScreen> {
   List<dynamic> students = []; // List to store student data
   List<dynamic> selectedStudents = [];
   bool filter = false;
-
+  PlatformFile? _selectedFile;
   String filterBy = '';
 
   ScrollController _scrollController = ScrollController();
@@ -262,7 +266,16 @@ class _studentsScreenState extends State<studentsScreen> {
                         SizedBox(
                           height: 4,
                         ),
-                        button2(txt: 'Import batch', onTap: () {}),
+                        button2(txt: 'Import batch', onTap: () async {
+                          try{
+                            await _handleFileSelection();
+                            await _uploadFile();
+
+                          }
+                          catch(e){
+                            print(e);
+                          }
+                        }),
                       ],
                     ),
                     SizedBox(
@@ -355,4 +368,54 @@ class _studentsScreenState extends State<studentsScreen> {
       throw Exception('Failed to load students');
     }
   }
+
+
+  // Function to handle file selection
+  Future<void> _handleFileSelection() async {
+    final result = await FilePicker.platform.pickFiles(
+      type: FileType.custom,
+      allowedExtensions: ['xlsx'],
+    );
+
+    if (result != null && result.files.isNotEmpty) {
+      setState(() {
+        _selectedFile = result.files.first;
+      });
+
+    }
+  }
+
+  // Function to upload the selected file to Flask
+  Future<void> _uploadFile() async{}
+
+/*{
+    try{
+
+      print( _selectedFile!.size);
+      print(_selectedFile!.name);
+      print(_selectedFile!.readStream!);
+      if (_selectedFile != null) {
+        final url = Uri.parse('http://127.0.0.1:5000/upload');
+        final request = http.MultipartRequest('POST', url)
+          ..files.add(await http.MultipartFile(
+            'file',
+            _selectedFile!.readStream!,
+            _selectedFile!.size,
+            filename: _selectedFile!.name,
+          ));
+
+
+        final response = await request.send();
+        if (response.statusCode == 200) {
+          print('File uploaded successfully');
+        } else {
+          print('Error uploading file');
+        }
+      }
+    }
+    catch(e){
+      MyDialog.showAlert(context, 'Error $e');
+    }
+
+  }*/
 }

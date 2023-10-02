@@ -5,6 +5,11 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from flask_cors import CORS
 import jwt 
 from pymongo import MongoClient
+import pandas as pd
+import os
+from bson import ObjectId  # Import ObjectId from pymongo
+
+
 
 
 app = Flask(__name__)
@@ -195,5 +200,64 @@ def insert_student():
         return jsonify({"error": str(e)}), 500
 
 
+# this function will add patch to the database 
+@app.route('/upload', methods=['POST'])
+def upload_excel():
+    mongo_client = MongoClient('mongodb://localhost:27017')
+    db = mongo_client['local']
+    students_collection = db['test']
+    try:
+        # Check if a file was included in the request
+        if 'file' not in request.files:
+            return jsonify({"error": "No file part"}), 400
+
+        file = request.files['file']
+
+        # Check if the file has an allowed extension (e.g., .xlsx)
+        if file.filename == '':
+            return jsonify({"error": "No selected file"}), 400
+        if file:
+            try:
+                app.config['UPLOAD_FOLDER'] = r'C:\Users\Louie\StudioProjects\tsti_exam_sys\api\UPLOAD_FOLDER'
+                # Save the uploaded file to the UPLOAD_FOLDER
+                file.save(os.path.join(app.config['UPLOAD_FOLDER'], file.filename))
+                # Read the uploaded Excel file into a DataFrame
+                df = pd.read_excel(os.path.join(app.config['UPLOAD_FOLDER'], file.filename))
+                # Iterate through the DataFrame and insert student data into MongoDB
+                inserted_students = []
+                for index, row in df.iterrows():
+                    student_data = {
+                    "_id": str(ObjectId()), 
+                    "Name": row["Name"],
+                    "ID": row["ID"],
+                    "Study ID": "",
+                    "Class": row["Class"],
+                    "Job ID": "",
+                    "Nationality": row["Nationality"]  ,
+                    "Class No": "",
+                    "Seat No":"",
+                    "Seat": "",
+                    "Type of Course": row["Course"],
+                    "Groups": [group.strip() for group in row["Student Group"].split(",")] if isinstance(row["Student Group"], str) else [],
+                    # Add other fields as needed
+                    }
+                    students_collection.insert_one(student_data)
+                    inserted_students.append(student_data)
+
+                print('done')
+                return jsonify({"message": "File uploaded and data added to the database", "inserted_students": inserted_students})
+            except Exception as e:
+                print('error ' , e )
+                return jsonify({"error": f"Error: {str(e)}"}), 500
+        else:
+            print( "Error uploading the file.")
+            return jsonify({"error": "Error uploading the file."}), 500
+    except Exception as e:
+        print('error ' , e )
+        return jsonify({"error": f"Error: {str(e)}"}), 500
+
+
+
 if __name__ == "__main__":
     app.run()
+    
