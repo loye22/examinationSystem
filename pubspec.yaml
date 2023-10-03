@@ -40,6 +40,8 @@ dependencies:
   data_table_2: ^2.4.2
   flutter_hooks: ^0.20.1
   file_picker: ^5.3.1
+  dio: ^5.3.3
+  excel: ^2.1.0
 
 dev_dependencies:
   flutter_test:

@@ -8,6 +8,7 @@ from pymongo import MongoClient
 import pandas as pd
 import os
 from bson import ObjectId  # Import ObjectId from pymongo
+import bson.json_util as json_util
 
 
 
@@ -227,7 +228,7 @@ def upload_excel():
                 inserted_students = []
                 for index, row in df.iterrows():
                     student_data = {
-                    "_id": str(ObjectId()), 
+                    "_id":  ObjectId(),
                     "Name": row["Name"],
                     "ID": row["ID"],
                     "Study ID": "",
@@ -238,7 +239,7 @@ def upload_excel():
                     "Seat No":"",
                     "Seat": "",
                     "Type of Course": row["Course"],
-                    "Groups": [group.strip() for group in row["Student Group"].split(",")] if isinstance(row["Student Group"], str) else [],
+                    "Groups": [group.strip().upper() for group in row["Student Group"].split(",")] if isinstance(row["Student Group"], str) else [],
                     # Add other fields as needed
                     }
                     students_collection.insert_one(student_data)
@@ -248,13 +249,13 @@ def upload_excel():
                 return jsonify({"message": "File uploaded and data added to the database", "inserted_students": inserted_students})
             except Exception as e:
                 print('error ' , e )
-                return jsonify({"error": f"Error: {str(e)}"}), 500
+                return jsonify({"error": f"Error: {str(e)}"}), 501
         else:
             print( "Error uploading the file.")
-            return jsonify({"error": "Error uploading the file."}), 500
+            return jsonify({"error": "Error uploading the file."}), 502
     except Exception as e:
         print('error ' , e )
-        return jsonify({"error": f"Error: {str(e)}"}), 500
+        return jsonify({"error": f"Error: {str(e)}"}), 503
 
 
 

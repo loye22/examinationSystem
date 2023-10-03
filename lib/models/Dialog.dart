@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class MyDialog {
-  static void showAlert(BuildContext context, String message) {
-    showDialog(
+  static Future<void> showAlert(BuildContext context, String message)  async {
+     await showDialog(
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(

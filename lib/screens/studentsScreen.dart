@@ -1,8 +1,9 @@
 import 'dart:convert';
-import 'dart:io';
 import 'package:data_table_2/data_table_2.dart';
+import 'package:dio/dio.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:tsti_exam_sys/models/Dialog.dart';
 import '../models/staticVars.dart';
@@ -10,6 +11,7 @@ import '../widget/addStudentPopUp.dart';
 import '../widget/button2.dart';
 import '../widget/sideBar.dart';
 import 'package:http/http.dart' as http;
+import 'package:excel/excel.dart' as ex ;
 
 
 class studentsScreen extends StatefulWidget {
@@ -72,7 +74,6 @@ class _studentsScreenState extends State<studentsScreen> {
                     padding: const EdgeInsets.all(16.0),
                     child: TextField(
                       onChanged: (value) {
-
                         this.filter = true;
                         this.filterBy = value;
 
@@ -134,15 +135,18 @@ class _studentsScreenState extends State<studentsScreen> {
                                         // Handle tap on the item
                                         // You can navigate to a new screen or perform other actions here
 
-                                        await getStudentsData(snapshot.data!
+                                        await getStudentsData(
+
+                                            snapshot.data!
                                             .where((classOrGroup) =>
                                                 classOrGroup
                                                     .toLowerCase()
                                                     .contains(this
                                                         .filterBy
-                                                        .toUpperCase()))
+                                                        .toLowerCase()))
                                             .toList()[index]
-                                            .toString());
+                                            .toString()
+                                        );
                                       },
                                     );
                                   },
@@ -169,7 +173,8 @@ class _studentsScreenState extends State<studentsScreen> {
                                           return;
                                         }
                                         await getStudentsData(
-                                            snapshot.data![index].toString());
+                                            snapshot.data![index].toString()
+                                        );
                                       },
                                     );
                                   },
@@ -252,41 +257,47 @@ class _studentsScreenState extends State<studentsScreen> {
                 padding: const EdgeInsets.all(5.0),
                 child: Row(
                   children: [
-                    Column(
-                      children: [
-                        button2(txt: 'Add new student', onTap: () {
+                    button2(
+                        txt: 'Add new student',
+                        onTap: () {
                           showDialog(
                             context: context,
                             builder: (BuildContext context) {
                               return StudentRegistrationDialog();
                             },
                           );
-
                         }),
-                        SizedBox(
-                          height: 4,
-                        ),
-                        button2(txt: 'Import batch', onTap: () async {
-                          try{
+                    button2(
+                        txt: 'Import batch',
+                        onTap: () async {
+                          try {
+                            //this fetacher is relay on 3 function
+                            // 1. _handleFileSelection() which pickup the excel file
+                            // 2.  _pickAndValidiateExcelFile() which validate the the excel file with nessasry colums
+                            //     return true in case its valied and fase other wise
+                            // 3. _uploadFile() witch post the excel file to flask server
+
+
+                            String txt = "The excel file is not valid ,Please make sure that your excel has the following colums \nStudent \nGroup	\nName	\nID	\nNationality	\nClass	\nSeat	\nCourse	\nType of Course	\nTrainer	\nExam Date	\nShift" ;
+                            //1.
                             await _handleFileSelection();
+                            //2.
+                            dynamic validate = await _pickAndValidiateExcelFile();
+                            if(validate == false || validate == null ){
+                              await MyDialog.showAlert(context, txt);
+                              return ;
+                            }
+                            //3.
                             await _uploadFile();
 
-                          }
-                          catch(e){
+                          } catch (e) {
                             print(e);
                           }
                         }),
-                      ],
-                    ),
                     SizedBox(
                       width: 5,
                     ),
-                    Column(
-                      children: [
-                        button2(
-                            txt: 'Move to more than one group', onTap: () {}),
-                      ],
-                    )
+                    button2(txt: 'Move to more than one group', onTap: () {})
                   ],
                 ),
               ),
@@ -369,9 +380,9 @@ class _studentsScreenState extends State<studentsScreen> {
     }
   }
 
-
   // Function to handle file selection
   Future<void> _handleFileSelection() async {
+
     final result = await FilePicker.platform.pickFiles(
       type: FileType.custom,
       allowedExtensions: ['xlsx'],
@@ -381,41 +392,76 @@ class _studentsScreenState extends State<studentsScreen> {
       setState(() {
         _selectedFile = result.files.first;
       });
-
     }
   }
 
   // Function to upload the selected file to Flask
-  Future<void> _uploadFile() async{}
+  Future<void> _uploadFile() async {
+    final url = 'http://127.0.0.1:5000/upload'; // Replace with your server URL
 
-/*{
-    try{
+    final request = http.MultipartRequest('POST', Uri.parse(url));
+    request.files.add(http.MultipartFile.fromBytes(
+      'file', // Make sure the key matches what the server expects
+      this._selectedFile!.bytes as List<int>,
+      filename: this._selectedFile!.name,
+    ));
 
-      print( _selectedFile!.size);
-      print(_selectedFile!.name);
-      print(_selectedFile!.readStream!);
-      if (_selectedFile != null) {
-        final url = Uri.parse('http://127.0.0.1:5000/upload');
-        final request = http.MultipartRequest('POST', url)
-          ..files.add(await http.MultipartFile(
-            'file',
-            _selectedFile!.readStream!,
-            _selectedFile!.size,
-            filename: _selectedFile!.name,
-          ));
-
-
-        final response = await request.send();
-        if (response.statusCode == 200) {
-          print('File uploaded successfully');
-        } else {
-          print('Error uploading file');
-        }
+    try {
+      final response = await request.send();
+      if (response.statusCode == 200) {
+        print('File uploaded successfully');
+        MyDialog.showAlert(context, 'File uploaded successfully');
+      } else {
+        print('File upload failed with status code: ${response.statusCode}');
+        MyDialog.showAlert(context,
+            'File upload failed with status code: ${response.statusCode}');
       }
+    } catch (e) {
+      print('Error uploading file: $e');
+      MyDialog.showAlert(context, 'Error uploading file: $e');
     }
-    catch(e){
-      MyDialog.showAlert(context, 'Error $e');
-    }
+  }
 
-  }*/
+  Future<bool?> _pickAndValidiateExcelFile() async  {
+    try {
+        PlatformFile file = this._selectedFile!;
+        final bytes = file.bytes;
+        // Ensure that the selected file contains the required columns
+        final excel = ex.Excel.decodeBytes(bytes!);
+        final sheet = excel.tables[excel.tables.keys.first]!;
+        // Define the list of required column headers
+        final requiredColumns = [
+          'Student Group',
+          'Name',
+          'ID',
+          'Nationality',
+          'Class',
+          'Seat',
+          'Course',
+          'Type of Course',
+          'Trainer',
+          'Exam Date',
+          'Shift',
+        ];
+
+        // Check if all required columns are present in the Excel file
+        final headerRow = sheet.rows.first.map((cell) => cell!.value.toString().trim());
+        final missingColumns = requiredColumns
+            .where((column) => !headerRow.contains(column))
+            .toList();
+        if (missingColumns.isEmpty) {
+          // All required columns are present, you can proceed with the file.
+          // bytes contains the file content.
+          print('File is valid and contains all required columns.');
+          return true ;
+        } else {
+          // Some required columns are missing.
+          print('File is missing the following required columns: $missingColumns');
+          return false ;
+        }
+    } catch (e) {
+      print('Error picking and validating the Excel file: $e');
+    }
+  }
 }
+
