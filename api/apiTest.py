@@ -213,17 +213,19 @@ def upload_excel():
             return jsonify({"error": "No file part"}), 400
 
         file = request.files['file']
-
+        #print('->>>>>>>>>>>>>>>>>>>>>>>>>>' , file)
         # Check if the file has an allowed extension (e.g., .xlsx)
         if file.filename == '':
             return jsonify({"error": "No selected file"}), 400
         if file:
             try:
+            
                 app.config['UPLOAD_FOLDER'] = r'C:\Users\Louie\StudioProjects\tsti_exam_sys\api\UPLOAD_FOLDER'
                 # Save the uploaded file to the UPLOAD_FOLDER
                 file.save(os.path.join(app.config['UPLOAD_FOLDER'], file.filename))
                 # Read the uploaded Excel file into a DataFrame
                 df = pd.read_excel(os.path.join(app.config['UPLOAD_FOLDER'], file.filename))
+                df = df.fillna("")
                 # Iterate through the DataFrame and insert student data into MongoDB
                 inserted_students = []
                 for index, row in df.iterrows():
@@ -242,11 +244,11 @@ def upload_excel():
                     "Groups": [group.strip().upper() for group in row["Student Group"].split(",")] if isinstance(row["Student Group"], str) else [],
                     # Add other fields as needed
                     }
+                    
                     students_collection.insert_one(student_data)
                     inserted_students.append(student_data)
-
                 print('done')
-                return jsonify({"message": "File uploaded and data added to the database", "inserted_students": inserted_students})
+                return jsonify({"message": "File uploaded and data added to the database"})
             except Exception as e:
                 print('error ' , e )
                 return jsonify({"error": f"Error: {str(e)}"}), 501
@@ -257,6 +259,39 @@ def upload_excel():
         print('error ' , e )
         return jsonify({"error": f"Error: {str(e)}"}), 503
 
+
+
+# re-exam funciotn
+@app.route('/re_exam', methods=['POST'])
+def re_exam():
+    try:      
+        # MongoDB connection setup
+        client = MongoClient("mongodb://localhost:27017/")  # Replace with your MongoDB connection URL
+        db = client["local"]  # Replace with your database name
+        collection = db["test"]  # Replace with your collection name
+        data = request.json
+        student_ids = data.get('student_ids', [])
+        
+        for student_id in student_ids:
+            # Find the student document by ID
+            student = collection.find_one({'ID': student_id})
+            
+            if student:
+                # Get the current "Groups" list
+                current_groups = student.get('Groups', [])
+                
+                # Append a new group with "-RE" to the last group in the list (if available)
+                if current_groups:
+                    last_group = current_groups[-1]
+                    new_group = f"{last_group}-RE"
+                    current_groups.append(new_group)
+                
+                # Update the "Groups" field with the modified list
+                collection.update_one({'ID': student_id}, {'$set': {'Groups': current_groups}})
+        
+        return jsonify({'message': 'Groups updated successfully'})
+    except Exception as e:
+        return jsonify({'error': str(e)})
 
 
 if __name__ == "__main__":

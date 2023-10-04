@@ -10,6 +10,7 @@ students_collection = db['students']
 # Define the criteria to match students with the "Groups" field equal to "Group-01"
 criteria = {"Groups": ["GROUP-01"]}
 
+
 # Delete students that match the criteria
 result = students_collection.delete_many(criteria)
 

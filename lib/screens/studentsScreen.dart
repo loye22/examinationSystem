@@ -11,8 +11,7 @@ import '../widget/addStudentPopUp.dart';
 import '../widget/button2.dart';
 import '../widget/sideBar.dart';
 import 'package:http/http.dart' as http;
-import 'package:excel/excel.dart' as ex ;
-
+import 'package:excel/excel.dart' as ex;
 
 class studentsScreen extends StatefulWidget {
   static const routeName = '/logInScreen';
@@ -27,6 +26,9 @@ class _studentsScreenState extends State<studentsScreen> {
   List<dynamic> students = []; // List to store student data
   List<dynamic> selectedStudents = [];
   bool filter = false;
+  bool reExamFlag = false;
+  bool dataTableFlag = false;
+
   PlatformFile? _selectedFile;
   String filterBy = '';
 
@@ -135,9 +137,9 @@ class _studentsScreenState extends State<studentsScreen> {
                                         // Handle tap on the item
                                         // You can navigate to a new screen or perform other actions here
 
-                                        await getStudentsData(
-
-                                            snapshot.data!
+                                        this.dataTableFlag = true;
+                                        setState(() {});
+                                        await getStudentsData(snapshot.data!
                                             .where((classOrGroup) =>
                                                 classOrGroup
                                                     .toLowerCase()
@@ -145,8 +147,9 @@ class _studentsScreenState extends State<studentsScreen> {
                                                         .filterBy
                                                         .toLowerCase()))
                                             .toList()[index]
-                                            .toString()
-                                        );
+                                            .toString());
+                                        this.dataTableFlag = false;
+                                        setState(() {});
                                       },
                                     );
                                   },
@@ -172,9 +175,12 @@ class _studentsScreenState extends State<studentsScreen> {
                                           await fetchFirst50Students();
                                           return;
                                         }
+                                        this.dataTableFlag = true;
+                                        setState(() {});
                                         await getStudentsData(
-                                            snapshot.data![index].toString()
-                                        );
+                                            snapshot.data![index].toString());
+                                        this.dataTableFlag = false;
+                                        setState(() {});
                                       },
                                     );
                                   },
@@ -190,57 +196,65 @@ class _studentsScreenState extends State<studentsScreen> {
           Positioned(
             right: 10,
             bottom: 30,
-            child: Container(
-              height: MediaQuery.of(context).size.height - 200,
-              width: MediaQuery.of(context).size.width - 500,
-              decoration: BoxDecoration(
-                  border: Border.all(color: Colors.black),
-                  borderRadius: BorderRadius.circular(30)),
-              child: DataTable2(
-                columns: [
-                  DataColumn(
-                    label: Center(child: Text('Name')),
-                  ),
-                  DataColumn(
-                    label: Center(child: Text('ID')),
-                  ),
-                  DataColumn(
-                    label: Center(child: Text('Class')),
-                  ),
-                  DataColumn(
-                    label: Center(child: Text('Group')),
-                  ),
-                  DataColumn(
-                    label: Center(child: Text('Action')),
-                  ),
-                ],
-                rows: this.students.map(
-                  (e) {
-                    return DataRow2.byIndex(
-                        index: this.students.indexOf(e),
-                        // Use the index of the student
-                        selected: selectedStudents.contains(e),
-                        onSelectChanged: (isSelected) {
-                          setState(() {
-                            if (isSelected == true) {
-                              selectedStudents.add(
-                                  e); // Add the student to the selected list
-                            } else {
-                              selectedStudents.remove(
-                                  e); // Remove the student from the selected list
-                            }
-                          });
-                        },
-                        cells: [
-                          // DataCell(Text( (this.students.length - (this.students.length - 1)).toString())) ,
-                          DataCell(Center(child: Text(e['Name']))),
-                          DataCell(Center(child: Text(e['ID']))),
-                          DataCell(Center(child: Text(e['Class']))),
-                          DataCell(Center(child: Text(e['Groups'].toString()))),
-                          DataCell(Center(child: Text('Action'))),
-                        ]);
-                  },
-                ).toList(),
+            child: StatefulBuilder(
+              builder: (BuildContext context, StateSetter setState) =>
+                  Container(
+                height: MediaQuery.of(context).size.height - 200,
+                width: MediaQuery.of(context).size.width - 500,
+                decoration: BoxDecoration(
+                    border: Border.all(color: Colors.black),
+                    borderRadius: BorderRadius.circular(30)),
+                child: this.dataTableFlag
+                    ? Center(
+                        child: CircularProgressIndicator(),
+                      )
+                    : DataTable2(
+                        columns: [
+                          DataColumn(
+                            label: Center(child: Text('Name')),
+                          ),
+                          DataColumn(
+                            label: Center(child: Text('ID')),
+                          ),
+                          DataColumn(
+                            label: Center(child: Text('Class')),
+                          ),
+                          DataColumn(
+                            label: Center(child: Text('Group')),
+                          ),
+                          DataColumn(
+                            label: Center(child: Text('Action')),
+                          ),
+                        ],
+                        rows: this.students.map(
+                          (e) {
+                            return DataRow2.byIndex(
+                                index: this.students.indexOf(e),
+                                // Use the index of the student
+                                selected: selectedStudents.contains(e),
+                                onSelectChanged: (isSelected) {
+                                  setState(() {
+                                    if (isSelected == true) {
+                                      selectedStudents.add(
+                                          e); // Add the student to the selected list
+                                    } else {
+                                      selectedStudents.remove(
+                                          e); // Remove the student from the selected list
+                                    }
+                                  });
+                                },
+                                cells: [
+                                  // DataCell(Text( (this.students.length - (this.students.length - 1)).toString())) ,
+                                  DataCell(Center(child: Text(e['Name']))),
+                                  DataCell(Center(child: Text(e['ID']))),
+                                  DataCell(Center(child: Text(e['Class']))),
+                                  DataCell(Center(
+                                      child: Text(e['Groups'].toString()))),
+                                  DataCell(Center(child: Text('Action'))),
+                                ]);
+                          },
+                        ).toList(),
+                      ),
               ),
             ),
           ),
@@ -277,19 +291,21 @@ class _studentsScreenState extends State<studentsScreen> {
                             //     return true in case its valied and fase other wise
                             // 3. _uploadFile() witch post the excel file to flask server
 
-
-                            String txt = "The excel file is not valid ,Please make sure that your excel has the following colums \nStudent \nGroup	\nName	\nID	\nNationality	\nClass	\nSeat	\nCourse	\nType of Course	\nTrainer	\nExam Date	\nShift" ;
+                            String txt =
+                                "The excel file is not valid ,Please make sure that your excel has the following colums \nStudent \nGroup	\nName	\nID	\nNationality	\nClass	\nSeat	\nCourse	\nType of Course	\nTrainer	\nExam Date	\nShift";
                             //1.
                             await _handleFileSelection();
                             //2.
-                            dynamic validate = await _pickAndValidiateExcelFile();
-                            if(validate == false || validate == null ){
+                            dynamic validate =
+                                await _pickAndValidiateExcelFile();
+                            if (validate == false ||
+                                validate == null ||
+                                this._selectedFile == null) {
                               await MyDialog.showAlert(context, txt);
-                              return ;
+                              return;
                             }
                             //3.
                             await _uploadFile();
-
                           } catch (e) {
                             print(e);
                           }
@@ -297,7 +313,25 @@ class _studentsScreenState extends State<studentsScreen> {
                     SizedBox(
                       width: 5,
                     ),
-                    button2(txt: 'Move to more than one group', onTap: () {})
+                    this.reExamFlag
+                        ? Center(
+                            child: CircularProgressIndicator(),
+                          )
+                        : button2(
+                            txt: 'Re-exam',
+                            onTap: () async {
+                              // this button is to re-exam the student
+                              if (this.selectedStudents.isEmpty) {
+                                MyDialog.showAlert(context,
+                                    'Please select the student that you wish to exam them');
+                                return;
+                              }
+                              this.reExamFlag = true;
+                              setState(() {});
+                              await reExam(["mbk1160", "ads2025", "2532s"]);
+                              this.reExamFlag = false;
+                              setState(() {});
+                            })
                   ],
                 ),
               ),
@@ -365,7 +399,7 @@ class _studentsScreenState extends State<studentsScreen> {
   }
 
   // this function will returns all the students that belong to specific group
-  Future<void> getStudentsData(String group) async {
+  Future<List> getStudentsData(String group) async {
     final response = await http.get(Uri.parse(
         'http://localhost:5000/getStudentsData?group=' +
             group)); // Replace with your API endpoint
@@ -375,6 +409,7 @@ class _studentsScreenState extends State<studentsScreen> {
       setState(() {
         students = data;
       });
+      return data;
     } else {
       throw Exception('Failed to load students');
     }
@@ -382,7 +417,6 @@ class _studentsScreenState extends State<studentsScreen> {
 
   // Function to handle file selection
   Future<void> _handleFileSelection() async {
-
     final result = await FilePicker.platform.pickFiles(
       type: FileType.custom,
       allowedExtensions: ['xlsx'],
@@ -400,6 +434,7 @@ class _studentsScreenState extends State<studentsScreen> {
     final url = 'http://127.0.0.1:5000/upload'; // Replace with your server URL
 
     final request = http.MultipartRequest('POST', Uri.parse(url));
+    request.fields['key'] = 'file';
     request.files.add(http.MultipartFile.fromBytes(
       'file', // Make sure the key matches what the server expects
       this._selectedFile!.bytes as List<int>,
@@ -422,46 +457,74 @@ class _studentsScreenState extends State<studentsScreen> {
     }
   }
 
-  Future<bool?> _pickAndValidiateExcelFile() async  {
+  Future<bool?> _pickAndValidiateExcelFile() async {
     try {
-        PlatformFile file = this._selectedFile!;
-        final bytes = file.bytes;
-        // Ensure that the selected file contains the required columns
-        final excel = ex.Excel.decodeBytes(bytes!);
-        final sheet = excel.tables[excel.tables.keys.first]!;
-        // Define the list of required column headers
-        final requiredColumns = [
-          'Student Group',
-          'Name',
-          'ID',
-          'Nationality',
-          'Class',
-          'Seat',
-          'Course',
-          'Type of Course',
-          'Trainer',
-          'Exam Date',
-          'Shift',
-        ];
+      PlatformFile file = this._selectedFile!;
+      final bytes = file.bytes;
+      // Ensure that the selected file contains the required columns
+      final excel = ex.Excel.decodeBytes(bytes!);
+      final sheet = excel.tables[excel.tables.keys.first]!;
+      // Define the list of required column headers
+      final requiredColumns = [
+        'Student Group',
+        'Name',
+        'ID',
+        'Nationality',
+        'Class',
+        'Seat',
+        'Course',
+        'Type of Course',
+        'Trainer',
+        'Exam Date',
+        'Shift',
+      ];
 
-        // Check if all required columns are present in the Excel file
-        final headerRow = sheet.rows.first.map((cell) => cell!.value.toString().trim());
-        final missingColumns = requiredColumns
-            .where((column) => !headerRow.contains(column))
-            .toList();
-        if (missingColumns.isEmpty) {
-          // All required columns are present, you can proceed with the file.
-          // bytes contains the file content.
-          print('File is valid and contains all required columns.');
-          return true ;
-        } else {
-          // Some required columns are missing.
-          print('File is missing the following required columns: $missingColumns');
-          return false ;
-        }
+      // Check if all required columns are present in the Excel file
+      final headerRow =
+          sheet.rows.first.map((cell) => cell!.value.toString().trim());
+      final missingColumns = requiredColumns
+          .where((column) => !headerRow.contains(column))
+          .toList();
+      if (missingColumns.isEmpty) {
+        // All required columns are present, you can proceed with the file.
+        // bytes contains the file content.
+        print('File is valid and contains all required columns.');
+        return true;
+      } else {
+        // Some required columns are missing.
+        print(
+            'File is missing the following required columns: $missingColumns');
+        return false;
+      }
     } catch (e) {
       print('Error picking and validating the Excel file: $e');
     }
   }
-}
 
+  Future<void> reExam(List<String> studentIds) async {
+    try {
+      final apiUrl =
+          'http://localhost:5000/re_exam'; // Replace with your API endpoint URL
+      final headers = <String, String>{
+        'Content-Type': 'application/json',
+      };
+      final body = <String, dynamic>{
+        'student_ids': studentIds,
+      };
+      final response = await http.post(Uri.parse(apiUrl),
+          headers: headers, body: jsonEncode(body));
+      if (response.statusCode == 200) {
+        // Request was successful
+        print('Groups updated successfully');
+        MyDialog.showAlert(context, 'Groups updated successfully');
+      } else {
+        // Request failed
+        MyDialog.showAlert(
+            context, 'Failed to update groups: ${response.statusCode}');
+        print('Failed to update groups: ${response.statusCode}');
+      }
+    } catch (e) {
+      MyDialog.showAlert(context, 'error : $e');
+    }
+  }
+}
