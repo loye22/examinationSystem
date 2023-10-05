@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:tsti_exam_sys/screens/homePage.dart';
 import 'package:tsti_exam_sys/screens/logInScreen.dart';
+import 'package:tsti_exam_sys/screens/questionsScreen.dart';
 import 'package:tsti_exam_sys/screens/studentsScreen.dart';
 
 void main() {
@@ -29,6 +30,7 @@ class _MyAppState extends State<MyApp> {
         logInScreen.routeName: (ctx) => logInScreen(),
         homePage.routeName: (ctx) => homePage(),
         studentsScreen.routeName: (ctx) => studentsScreen(),
+        questionsScreen.routeName: (ctx) => questionsScreen(),
       },
     );
   }

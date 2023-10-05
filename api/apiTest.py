@@ -9,6 +9,7 @@ import pandas as pd
 import os
 from bson import ObjectId  # Import ObjectId from pymongo
 import bson.json_util as json_util
+import re 
 
 
 
@@ -262,13 +263,14 @@ def upload_excel():
 
 
 # re-exam funciotn
+# this funciton just append to the Group list the last group with "-RE" to rexam
 @app.route('/re_exam', methods=['POST'])
 def re_exam():
     try:      
         # MongoDB connection setup
         client = MongoClient("mongodb://localhost:27017/")  # Replace with your MongoDB connection URL
         db = client["local"]  # Replace with your database name
-        collection = db["test"]  # Replace with your collection name
+        collection = db["students"]  # Replace with your collection name
         data = request.json
         student_ids = data.get('student_ids', [])
         
@@ -290,6 +292,106 @@ def re_exam():
                 collection.update_one({'ID': student_id}, {'$set': {'Groups': current_groups}})
         
         return jsonify({'message': 'Groups updated successfully'})
+    except Exception as e:
+        return jsonify({'error': str(e)})
+
+
+# to search student by certan id 
+@app.route('/search_student_byid', methods=['GET'])
+def search_student_byid():
+    client = MongoClient("mongodb://localhost:27017/")  # Replace with your MongoDB connection URL
+    db = client["local"]  # Replace with your database name
+    collection = db["students"]  # Replace with your collection name
+    try:    
+        student_id = request.args.get('student_id', '')
+        if not student_id:
+            return jsonify({'error': 'Student ID is required'})
+        # Search for students with IDs containing the provided search string
+        regex = re.compile(f'.*{student_id}.*', re.IGNORECASE)
+        students = list(collection.find({'ID': {'$regex': regex}}))
+
+        if students:
+            # Convert ObjectId to a string in the result
+            for student in students:
+                student['_id'] = str(student['_id'])
+
+            return jsonify(students)
+        else:
+            return jsonify({'message': 'No matching students found'})
+    except Exception as e:
+            return jsonify({'error': str(e)})
+    
+# get all the quasation category
+@app.route('/questions_unique_categories', methods=['GET'])
+def unique_categories():
+    try:
+        # MongoDB connection setup
+        client = MongoClient("mongodb://localhost:27017/")  # Replace with your MongoDB connection URL
+        db = client["local"]  # Replace with your database name
+        collection = db["quastion"]  # Replace with your collection name
+        # Use the aggregation framework to find distinct categories
+        pipeline = [
+            {"$group": {"_id": "$Category"}},
+        ]
+
+        categories = list(collection.aggregate(pipeline))
+
+        if categories:
+            unique_categories = [category['_id'] for category in categories]
+            return jsonify(unique_categories)
+        else:
+            return jsonify({'message': 'No categories found'})
+    except Exception as e:
+        return jsonify({'error': str(e)})
+
+#this function will return the first 50 quastion
+@app.route('/get_first_50_questions', methods=['GET'])
+def get_first_50_questions():
+    # MongoDB connection setup
+    client = MongoClient("mongodb://localhost:27017/")  # Replace with your MongoDB connection URL
+    db = client["local"]  # Replace with your database name
+    collection = db["quastion"]  # Replace with your collection name
+    try:
+        # Find the first 50 questions
+        questions = list(collection.find().limit(50))
+
+        if questions:
+            # Remove the "_id" field from each question
+            for question in questions:
+                question.pop('_id', None)
+
+            return jsonify(questions)
+        else:
+            return jsonify({'message': 'No questions found'})
+    except Exception as e:
+        return jsonify({'error': str(e)})
+
+
+# this function will return all the quastion for sepcifec categort 
+@app.route('/get_questions_by_category', methods=['GET'])
+def get_questions_by_category():
+    try:
+        # MongoDB connection setup
+        client = MongoClient("mongodb://localhost:27017/")  # Replace with your MongoDB connection URL
+        db = client["local"]  # Replace with your database name
+        collection = db["quastion"]  # Replace with your collection name
+        category = request.args.get('category', '')
+        print(category)
+
+        if not category:
+            return jsonify({'error': 'category is required'})
+
+        # Find questions by the specified category
+        questions = list(collection.find({'Category': category}))
+
+        if questions:
+            # Remove the "_id" field from each question
+            for question in questions:
+                question.pop('_id', None)
+
+            return jsonify(questions)
+        else:
+            return jsonify({'message': 'No questions found for the specified category'})
     except Exception as e:
         return jsonify({'error': str(e)})
 

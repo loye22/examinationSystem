@@ -32,6 +32,7 @@ class _studentsScreenState extends State<studentsScreen> {
   PlatformFile? _selectedFile;
   String filterBy = '';
 
+  TextEditingController searchByIdController = TextEditingController();
   ScrollController _scrollController = ScrollController();
   List<bool> selectedItems = []; // Initialize with all items unselected
   @override
@@ -43,6 +44,7 @@ class _studentsScreenState extends State<studentsScreen> {
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       appBar: AppBar(backgroundColor: Color.fromRGBO(43, 54, 67, 1)),
       body: Stack(
@@ -69,7 +71,9 @@ class _studentsScreenState extends State<studentsScreen> {
                     height: 10,
                   ),
                   button2(
-                    onTap: () {},
+                    onTap: () {
+                      MyDialog.showAlert(context, this.selectedStudents.map((e) => e["ID"]).toList().toString());
+                    },
                     txt: 'New root group',
                   ),
                   Padding(
@@ -328,9 +332,12 @@ class _studentsScreenState extends State<studentsScreen> {
                               }
                               this.reExamFlag = true;
                               setState(() {});
-                              await reExam(["mbk1160", "ads2025", "2532s"]);
+                              List<String> IDS =  this.selectedStudents.map((e) => e["ID"].toString()).toList();
+                              await reExam(IDS);
                               this.reExamFlag = false;
+                              this.selectedStudents.clear();
                               setState(() {});
+
                             })
                   ],
                 ),
@@ -345,9 +352,17 @@ class _studentsScreenState extends State<studentsScreen> {
               height: 100,
               padding: const EdgeInsets.all(16.0),
               child: TextField(
-                onChanged: (value) {},
+                controller: searchByIdController,
+                onSubmitted: (s) async {
+                  List<Map<String, dynamic>> results = await searchStudentsById(searchByIdController.text.trim());
+                  this.students = results ;
+                  setState(() {});
+
+                  },
+
+
                 decoration: InputDecoration(
-                  hintText: 'Search student',
+                  hintText: 'Search student by id',
                   prefixIcon: Icon(Icons.search),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10.0),
@@ -527,4 +542,23 @@ class _studentsScreenState extends State<studentsScreen> {
       MyDialog.showAlert(context, 'error : $e');
     }
   }
+
+
+
+
+  Future<List<Map<String, dynamic>>> searchStudentsById(String studentId) async {
+    final apiUrl = 'http://127.0.0.1:5000/search_student_byid?student_id=$studentId';
+    final response = await http.get(Uri.parse(apiUrl));
+
+    if (response.statusCode == 200) {
+      // Parse the JSON response
+      final List<dynamic> jsonData = json.decode(response.body);
+      // Convert the list of dynamic to a list of Map<String, dynamic>
+      final List<Map<String, dynamic>> students = jsonData.cast<Map<String, dynamic>>();
+      return students;
+    } else {
+      throw Exception('Failed to load students');
+    }
+  }
+
 }

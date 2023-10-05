@@ -3,6 +3,8 @@ import 'package:tsti_exam_sys/screens/homePage.dart';
 import 'package:tsti_exam_sys/screens/studentsScreen.dart';
 import 'package:tsti_exam_sys/widget/button.dart';
 
+import '../screens/questionsScreen.dart';
+
 class sideBar extends StatefulWidget {
   final int index  ;
   const sideBar({Key? key, required this.index}) : super(key: key);
@@ -45,7 +47,9 @@ class _sideBarState extends State<sideBar> {
               height:space,
             ),
             button(
-              onPress: () {},
+              onPress: () {
+                Navigator.of(context).pushNamed(questionsScreen.routeName);
+              },
               btnName: 'Quastions',
               isSlected: widget.index == 3 ? true : false ,
               icon: Icons.help_outline,
