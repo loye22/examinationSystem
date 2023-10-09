@@ -3,6 +3,7 @@ import 'package:tsti_exam_sys/screens/homePage.dart';
 import 'package:tsti_exam_sys/screens/studentsScreen.dart';
 import 'package:tsti_exam_sys/widget/button.dart';
 
+import '../screens/examsScreen.dart';
 import '../screens/questionsScreen.dart';
 
 class sideBar extends StatefulWidget {
@@ -39,7 +40,9 @@ class _sideBarState extends State<sideBar> {
               height:space,
             ),
             button(
-              onPress: () {},
+              onPress: () {
+                Navigator.of(context).pushNamed(examScreen.routeName);
+              },
               btnName: 'Exams',
               isSlected: widget.index == 2 ? true : false ,
               icon: Icons.check_circle_outline,

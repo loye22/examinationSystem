@@ -396,6 +396,52 @@ def get_questions_by_category():
         return jsonify({'error': str(e)})
 
 
+
+
+# this function will retuerns all the exam's categorys
+@app.route('/exam_categories', methods=['GET'])
+def get_exam_categories():
+    # MongoDB connection setup
+    client = MongoClient("mongodb://localhost:27017")  # Replace with your MongoDB connection string
+    db = client["local"]  # Replace with your database name
+    collection = db["test"]  # Replace with your collection name
+    # Use aggregation to retrieve unique exam categories
+    pipeline = [
+        {"$group": {"_id": "$exam_category"}},
+        {"$sort": {"_id": 1}}
+    ]
+    categories = list(collection.aggregate(pipeline))
+
+    # Extract category names from the result
+    category_names = [category["_id"] for category in categories]
+
+    return jsonify({"exam_categories": category_names})
+
+@app.route('/exam_data', methods=['GET'])
+def get_exam_data():
+    # MongoDB connection setup
+    client = MongoClient("mongodb://localhost:27017")  # Replace with your MongoDB connection string
+    db = client["local"]  # Replace with your database name
+    collection = db["test"] 
+     # Retrieve the first 50 rows of data from the collection
+    data = list(collection.find().limit(50))
+
+    # Serialize the data to JSON with ObjectId converted to strings
+    serialized_data = []
+    for doc in data:
+        # Convert ObjectId to string for the '_id' field
+        doc['_id'] = str(doc['_id'])
+        serialized_data.append(doc)
+
+    return jsonify(serialized_data)
+
+
+
+
+
+
+
+
 if __name__ == "__main__":
     app.run()
     
