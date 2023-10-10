@@ -10,6 +10,7 @@ import os
 from bson import ObjectId  # Import ObjectId from pymongo
 import bson.json_util as json_util
 import re 
+import json as json2
 
 
 
@@ -416,7 +417,7 @@ def get_exam_categories():
     category_names = [category["_id"] for category in categories]
 
     return jsonify({"exam_categories": category_names})
-
+'''
 @app.route('/exam_data', methods=['GET'])
 def get_exam_data():
     # MongoDB connection setup
@@ -434,11 +435,41 @@ def get_exam_data():
         serialized_data.append(doc)
 
     return jsonify(serialized_data)
+'''
 
 
 
+# Custom JSON encoder to handle ObjectId serialization
+class JSONEncoder(json2.JSONEncoder):
+    def default(self, o):
+        if isinstance(o, ObjectId):
+            return str(o)
+        return super(JSONEncoder, self).default(o)
 
+@app.route('/exam_data2', methods=['GET'])
+def get_exam_data2():
+    # MongoDB connection setup
+    client = MongoClient("mongodb://localhost:27017")  # Replace with your MongoDB connection string
+    db = client["local"]  # Replace with your database name
+    collection = db["test"] 
 
+    # Define the aggregation pipeline to group by "exam_title"
+    pipeline = [
+        {
+            "$group": {
+                "_id": "$exam_title",
+                "exam_data": {"$push": "$$ROOT"}  # Store all documents for each exam title
+            }
+        }
+    ]
+
+    # Execute the aggregation pipeline
+    aggregation_result = list(collection.aggregate(pipeline))
+
+    # Serialize the data using the custom JSON encoder
+    serialized_data = JSONEncoder().encode(aggregation_result)
+
+    return serialized_data
 
 
 

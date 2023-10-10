@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:tsti_exam_sys/screens/createNewExamScreen.dart';
 import 'package:tsti_exam_sys/screens/examsScreen.dart';
 import 'package:tsti_exam_sys/screens/homePage.dart';
 import 'package:tsti_exam_sys/screens/logInScreen.dart';
@@ -33,6 +34,7 @@ class _MyAppState extends State<MyApp> {
         studentsScreen.routeName: (ctx) => studentsScreen(),
         questionsScreen.routeName: (ctx) => questionsScreen(),
         examScreen.routeName: (ctx) => examScreen(),
+        createNewExamScreen.routeName: (ctx) => createNewExamScreen(),
       },
     );
   }

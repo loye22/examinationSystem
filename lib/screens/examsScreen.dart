@@ -7,10 +7,15 @@ import 'package:flutter/material.dart';
 import 'package:tsti_exam_sys/models/Dialog.dart';
 import 'package:tsti_exam_sys/widget/examCard.dart';
 import '../models/staticVars.dart';
+import '../test/test.dart';
 import '../widget/button2.dart';
 import '../widget/sideBar.dart';
 import 'package:http/http.dart' as http;
 import 'package:excel/excel.dart' as ex;
+import 'package:intl/intl.dart';
+
+
+import 'createNewExamScreen.dart';
 
 class examScreen extends StatefulWidget {
   static const routeName = '/examScreen';
@@ -22,14 +27,13 @@ class examScreen extends StatefulWidget {
 }
 
 class _examScreenState extends State<examScreen> {
-  List<dynamic> questions = []; // List to store student data
+  List<dynamic> exams = []; // List to store student data
   List<dynamic> selectedQuestions = [];
   bool filter = false;
   bool reExamFlag = false;
   bool dataTableFlag = false;
   PlatformFile? _selectedFile;
   String filterBy = '';
-
   TextEditingController searchByIdController = TextEditingController();
   ScrollController _scrollController = ScrollController();
   List<bool> selectedItems = []; // Initialize with all items unselected
@@ -71,8 +75,8 @@ class _examScreenState extends State<examScreen> {
                   button2(
                     onTap: () async {
 
-                      // dynamic x = await getQuastionData("أمن الفعاليات الخاصة2");
-                      // MyDialog.showAlert(context, x.toString());
+                       dynamic x = await fetchFirst50Exams();
+                       MyDialog.showAlert(context, x.toString());
 
 
                     },
@@ -202,23 +206,43 @@ class _examScreenState extends State<examScreen> {
             bottom: 30,
             child: StatefulBuilder(
               builder: (BuildContext context, StateSetter setState) =>
-                  examCard(
-                    examName: "Sample Exam 1",
-                    totalPoints: 50,
-                    questionCount: 10,
-                    group: "SOL3-C68-2023-AR",
-                    onPublish: () {
-                      // Handle the "Publish" button action
-                    },
-                    onPreview: () {
-                      // Handle the "Preview Exam" button action
-                    },
-                    onViewQuestions: () {
-                      // Handle the "Exam Questions" button action
-                    },
-                    onExportToWord: () {
-                      // Handle the "Export to Word" button action
-                    },
+                  Container(
+                    height: MediaQuery.of(context).size.height - 200,
+                    width: MediaQuery.of(context).size.width - 500,
+                   /* decoration: BoxDecoration( border: Border.all(color: Colors.black), borderRadius: BorderRadius.circular(30)),*/
+                    child: SingleChildScrollView(
+                      child: Column(
+                        children: this.exams.map((e){
+                          final date = e['exam_data']?.first?['date'] != null
+                              ? DateTime.parse(e['exam_data'].first['date'])
+                              : null;
+                          final group = e['exam_data']?.first['group'] ;
+
+
+                          return examCard(
+                            examName: e['_id'] ?? '404 NOTfound',
+                            totalPoints: '100',
+                            questionCount: '50',
+                            group: group == null  ?'404 NOTfound' : group.toString() ,
+                            CreatedTime: date == null  ?'404 NOTfound' : DateFormat('MMMM d, y H:mm a').format(date).toString(),//  ,
+                            onPublish: () {
+                              // Handle the "Publish" button action
+                            },
+                            onPreview: () {
+                              // Handle the "Preview Exam" button action
+                            },
+                            onViewQuestions: () {
+                              // Handle the "Exam Questions" button action
+                            },
+                            onExportToWord: () {
+                              // Handle the "Export to Word" button action
+                            },
+                            onStop: (){},
+                            onDetail: (){},
+                          );
+                        }).toList()
+                      ),
+                    ),
                   ),
             ),
           ),
@@ -238,6 +262,7 @@ class _examScreenState extends State<examScreen> {
                     button2(
                         txt: 'Add new exam',
                         onTap: () {
+                          Navigator.of(context).pushNamed(createNewExamScreen.routeName);
 
                         }),
 
@@ -246,6 +271,8 @@ class _examScreenState extends State<examScreen> {
               ),
             ),
           ),
+
+
 
           sideBar(
             index: 2,
@@ -275,10 +302,10 @@ class _examScreenState extends State<examScreen> {
   // this function will returnst all the students (the first 50 ones)
   Future<List<dynamic>> fetchFirst50Exams() async {
     final response =
-    await http.get(Uri.parse('http://localhost:5000/get_first_50_questions'));
+    await http.get(Uri.parse('http://localhost:5000/exam_data2'));
     if (response.statusCode == 200) {
       final List<dynamic> data = json.decode(response.body);
-      this.questions = data;
+      this.exams = data;
       setState(() {});
       //print(data);
       return data;
@@ -294,7 +321,7 @@ class _examScreenState extends State<examScreen> {
     if (response.statusCode == 200) {
       dynamic data = json.decode(response.body);
       setState(() {
-        questions = data;
+        exams = data;
       });
       return data;
     } else {
