@@ -472,6 +472,54 @@ def get_exam_data2():
     return serialized_data
 
 
+# this function will return all exams category 
+@app.route('/get_unique_exam_categories', methods=['GET'])
+def get_unique_exam_categories():
+    try:
+        # Connect to MongoDB
+        client = MongoClient("mongodb://localhost:27017/")
+        db = client['local']
+        collection = db['test']
+
+        # Query MongoDB to get unique exam categories
+        unique_exam_categories = collection.distinct("exam_category")
+
+        # Close the MongoDB connection
+        client.close()
+
+        # Return the unique exam categories as a JSON response
+        return jsonify(unique_exam_categories)
+
+    except Exception as e:
+        return jsonify({'error': str(e)})
+
+
+# this funtion will return all question category with there count
+# for ex  {Category": "Cash in transit","question_count": 23}
+@app.route('/get_categories_with_question_count', methods=['GET'])
+def get_categories_with_question_count():
+    try:
+        # MongoDB connection configuration
+        mongo_uri = "mongodb://localhost:27017/"  # Modify this with your MongoDB URI
+        # Connect to MongoDB
+        client = MongoClient("mongodb://localhost:27017/")
+        db = client['local']
+        collection = db['quastion']
+        # Aggregate query to group by "Category" and count questions in each category
+        pipeline = [
+            {"$group": {"_id": "$Category", "question_count": {"$sum": 1}}},
+            {"$project": {"_id": 0, "Category": "$_id", "question_count": 1}}
+        ]
+
+        result = list(collection.aggregate(pipeline))
+
+        # Return the category and question count data as a JSON response
+        return jsonify(result)
+
+    except Exception as e:
+        return jsonify({'error': str(e)})
+
+
 
 if __name__ == "__main__":
     app.run()

@@ -43,6 +43,7 @@ dependencies:
   dio: ^5.3.3
   excel: ^2.1.0
   intl: ^0.18.1
+  collection: ^1.17.0
 
 dev_dependencies:
   flutter_test:

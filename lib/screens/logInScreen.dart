@@ -123,7 +123,7 @@ class _logInScreenState extends State<logInScreen> {
                                 String username = _usernameController.text;
                                 String password = _passwordController.text;
                                 final response = await http.post(
-                                  Uri.parse( 'http://127.0.0.1:5000/api/auth' /*'http://10.0.2.2:5000/auth'*/),
+                                  Uri.parse('http://127.0.0.1:5000/api/auth' /*'http://10.0.2.2:5000/api/auth'*/),
                                   headers: <String, String>{
                                     'Content-Type': 'application/json',
                                   },
