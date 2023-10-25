@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:html';
 import 'package:collection/collection.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -18,7 +19,9 @@ class createNewExamScreen extends StatefulWidget {
 }
 
 class _createNewExamScreenState extends State<createNewExamScreen> {
-  String selectedCategory = "";
+  String selectedCategoryTxt = "";
+  String selectedGroup = "";
+  List<String> groupsList = [] ;
   List<String> categories = [];
   List<dynamic> selectedCategories = [];
   TextEditingController _examTitleControler = TextEditingController();
@@ -26,8 +29,7 @@ class _createNewExamScreenState extends State<createNewExamScreen> {
   Map<String, TextEditingController> pointsControllers = {};
   int totalQuestion = 0;
   int totalScore = 0;
-
-  int step = 2;
+  int step = 1;
 
   @override
   void initState() {
@@ -99,7 +101,7 @@ class _createNewExamScreenState extends State<createNewExamScreen> {
                       ),
                     ),
                     Text(
-                      pointsControllers.values.map((e) => int.parse(e.text.isEmpty ? "0" : e.text)).toList().sum.toString() ,
+                      calculateTotalPoints(pointsControllers, questionControllers).toString() ,
                       style: TextStyle(
                         fontSize: 16,
                       ),
@@ -161,6 +163,13 @@ class _createNewExamScreenState extends State<createNewExamScreen> {
                                               } else {
                                                 selectedCategories
                                                     .remove(categoryName);
+
+                                                print("we will remove --> $categoryName");
+                                                questionControllers.removeWhere((key, value) => key == categoryName);
+                                                pointsControllers.removeWhere((key, value) => key == categoryName);
+                                                //var x = questionControllers.map((key, value) => MapEntry(key , value.text) );
+                                                setState(() {});
+                                                //MyDialog.showAlert(context,  questionControllers.toString() + "\n" + categoryName);
                                               }
                                             });
                                           },
@@ -210,7 +219,42 @@ class _createNewExamScreenState extends State<createNewExamScreen> {
                         setState(() {});
                         break;
                       case 2:
-                        MyDialog.showAlert(context, 'XXX');
+                        if(selectedCategories.isEmpty){
+                          MyDialog.showAlert(context, "Kindly begin by adding questions first.");
+                          return;
+                        }
+                        if(!areControllersValid(pointsControllers, questionControllers)){
+                          MyDialog.showAlert(context, "Invalid entry; please ensure that none of the entries are zero.");
+                          return;
+                        }
+                        step++;
+                        setState(() {});
+                        break;
+                      case 3 :
+                        if(this.selectedGroup.isEmpty || this.selectedGroup ==""){
+                          MyDialog.showAlert(context, "Please select group for this exam");
+                          return;}
+                        step++;
+                        setState(() {});
+                        break;
+                      case 4 :
+                        String s = _examTitleControler.text +" \n" + this.selectedCategoryTxt + "\n" + this.selectedGroup;
+                        List<Map<String,String>> questionsReq = [] ;
+                        this.questionControllers.keys.forEach((key) {
+                          // Check if the key exists in both questionNe and points
+                          if (this.pointsControllers.containsKey(key)) {
+                            // Create a map with the desired structure and add it to the combinedList
+                            questionsReq.add({
+                              'cat': key,
+                              'nr': this.questionControllers[key]!.text,
+                              'pts': this.pointsControllers[key]!.text,
+                            });
+                          }
+                        });
+
+                        MyDialog.showAlert(context, s + "\n" + questionsReq.toString());
+
+                        break;
                     }
                   },
                   child: Container(
@@ -223,14 +267,13 @@ class _createNewExamScreenState extends State<createNewExamScreen> {
                         borderRadius: BorderRadius.circular(30)),
                     child: Center(
                       child: Text(
-                        'Next',
+                        this.step == 4 ? "Finish" :"Next",
                         style: TextStyle(color: Colors.white),
                       ),
                     ),
                   ),
                 ),
                 IconButton(onPressed: (){
-                  print(questionControllers.values.first.text.toString());
 
                 }, icon: Icon(Icons.add))
               ],
@@ -239,8 +282,8 @@ class _createNewExamScreenState extends State<createNewExamScreen> {
           // here we will display diffrent widget depend on the step
           if (step == 1)
             Positioned(
-              top: 200,
-              right: MediaQuery.of(context).size.width - 820,
+              top: MediaQuery.of(context).size.height * .25,
+              left: MediaQuery.of(context).size.width * .15,
               child: Container(
                 width: 500,
                 height: 200,
@@ -275,10 +318,10 @@ class _createNewExamScreenState extends State<createNewExamScreen> {
                       children: <Widget>[
                         Text('Exam Category: '),
                         DropdownButton<String>(
-                          value: selectedCategory,
+                          value: selectedCategoryTxt,
                           onChanged: (newValue) {
                             setState(() {
-                              selectedCategory = newValue!;
+                              selectedCategoryTxt = newValue!;
                             });
                           },
                           items: categories.map((String category) {
@@ -413,6 +456,56 @@ class _createNewExamScreenState extends State<createNewExamScreen> {
 
 
               ),
+            ),
+          if (step == 3)
+            Positioned(
+                top: MediaQuery.of(context).size.height * .25,
+                left: MediaQuery.of(context).size.width * .15,
+                child: Row(
+                  children: <Widget>[
+                    Text("Please select the group"),
+                    SizedBox(height: 20),
+                    Text('Group: '),
+                    FutureBuilder(
+                      future: classesNumbers(),
+                      builder: (ctx,snapShot){
+                        if(snapShot.hasError){
+                          return Center(child: Text(snapShot.error.toString()),);
+                        }
+                        if(snapShot.connectionState == ConnectionState.waiting){
+                          return Center(child: CircularProgressIndicator(),);
+                        }
+                        return DropdownButton<String>(
+                          value: this.selectedGroup,
+                          onChanged: (newValue) {
+                            setState(() {
+                              this.selectedGroup = newValue!;
+                            });
+                          },
+                          items: this.groupsList.map((String category) {
+                            return DropdownMenuItem<String>(
+                              value: category,
+                              child: Text(category),
+                            );
+                          }).toList(),
+                        );
+                      },
+                    ),
+                  ],
+                ),
+              /*Center(
+                  child: TextButton(
+                    child: Text('show results'),
+                    onPressed: (){
+                      for (var key in questionControllers.keys) {
+                        print('Key: $key, Value: ${questionControllers[key]!.text}  pts  ${pointsControllers[key]!.text}');
+                      }
+                      String s = "${_examTitleControler.text} \n ";
+                      MyDialog.showAlert(context,s);
+
+                    },
+                  ),
+                )*/
             )
         ],
       ),
@@ -446,7 +539,7 @@ class _createNewExamScreenState extends State<createNewExamScreen> {
               onPressed: () {
                 setState(() {
                   categories.add(newCategory);
-                  selectedCategory = newCategory;
+                  selectedCategoryTxt = newCategory;
                 });
                 Navigator.of(context).pop();
               },
@@ -467,7 +560,7 @@ class _createNewExamScreenState extends State<createNewExamScreen> {
         final data = json.decode(response.body);
         final uniqueCategories = List<String>.from(data);
         categories = uniqueCategories;
-        selectedCategory = categories.first;
+        selectedCategoryTxt = categories.first;
       } else {
         // If the server did not return a 200 OK response, throw an exception
         throw Exception('Failed to load exam categories');
@@ -491,4 +584,92 @@ class _createNewExamScreenState extends State<createNewExamScreen> {
       throw Exception('Failed to load categories');
     }
   }
+
+  // this funtion will calcuate the total poits for the exam
+  int calculateTotalPoints(Map<String, TextEditingController> pointsControllers, Map<String, TextEditingController> questionControllers) {
+    try{
+      int totalPoints = 0;
+      // Iterate over the keys in one of the maps (assuming they have the same keys)
+      pointsControllers.keys.forEach((category) {
+        // Check if the text values are not empty and can be parsed into integers
+        if (pointsControllers[category] != null && questionControllers[category] != null) {
+          final pointsText = pointsControllers[category]!.text;
+          final questionText = questionControllers[category]!.text;
+
+          if (pointsText.isNotEmpty && questionText.isNotEmpty) {
+            final points = int.tryParse(pointsText);
+            final questions = int.tryParse(questionText);
+
+            if (points != null && questions != null) {
+              // Add the product of points and questions to the totalPoints
+              totalPoints += points * questions;
+            }
+          }
+        }
+      });
+
+      return totalPoints;
+    }
+    catch (e){
+      MyDialog.showAlert(context, 'Error: $e');
+      return 0 ;
+    }
+
+  }
+
+  // this funtion will check if all the text filed are valid , non zeros non null
+  bool areControllersValid(Map<String, TextEditingController?> pointsControllers, Map<String, TextEditingController?> questionControllers) {
+    for (var category in pointsControllers.keys) {
+      final pointsController = pointsControllers[category];
+      final questionController = questionControllers[category];
+
+      if (pointsController == null || questionController == null) {
+        // If any controller is null, return false
+        return false;
+      }
+
+      final pointsText = pointsController.text;
+      final questionText = questionController.text;
+
+      if (pointsText.isEmpty || questionText.isEmpty) {
+        // If any text value is empty, return false
+        return false;
+      }
+
+      final points = int.tryParse(pointsText);
+      final questions = int.tryParse(questionText);
+
+      if (points == null || questions == null || points == 0 || questions == 0) {
+        // If any value cannot be parsed into an integer or is zero, return false
+        return false;
+      }
+    }
+
+    // If all controllers and values are valid, return true
+    return true;
+  }
+
+  // this function will return all the groups
+  Future<List<String>> classesNumbers() async {
+    if(!this.selectedGroup.isEmpty){
+      return [];
+    }
+    final response =
+    await http.get(Uri.parse('http://127.0.0.1:5000/unique_groups'));
+
+    if (response.statusCode == 200) {
+      final data = json.decode(response.body);
+      //print(List<String>.from(data['unique_groups']));
+      List<String> res = List<String>.from(data['unique_groups']);
+      res.add("All students");
+      List<String> reversedList = new List.from(res.reversed);
+      //return List<String>.from(data['unique_groups']);
+      this.selectedGroup = reversedList[1];
+      this.groupsList = reversedList ;
+      return reversedList;
+    } else {
+      throw Exception('Failed to load data');
+    }
+  }
+
 }
