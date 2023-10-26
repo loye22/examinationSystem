@@ -89,6 +89,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "5.3.3"
+  docx_template:
+    dependency: "direct main"
+    description:
+      name: docx_template
+      sha256: "70691589ec0d3f15a0c10d8b42cb1b6ce1fa968840a9fedb6373f6e4db8bc2c0"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.3.6"
   equatable:
     dependency: transitive
     description:

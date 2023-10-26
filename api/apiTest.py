@@ -11,6 +11,9 @@ from bson import ObjectId  # Import ObjectId from pymongo
 import bson.json_util as json_util
 import re 
 import json as json2
+import random
+from datetime import datetime
+
 
 
 
@@ -405,7 +408,7 @@ def get_exam_categories():
     # MongoDB connection setup
     client = MongoClient("mongodb://localhost:27017")  # Replace with your MongoDB connection string
     db = client["local"]  # Replace with your database name
-    collection = db["test"]  # Replace with your collection name
+    collection = db["exams"]  # Replace with your collection name
     # Use aggregation to retrieve unique exam categories
     pipeline = [
         {"$group": {"_id": "$exam_category"}},
@@ -445,13 +448,14 @@ class JSONEncoder(json2.JSONEncoder):
         if isinstance(o, ObjectId):
             return str(o)
         return super(JSONEncoder, self).default(o)
-
+    
+# this funciton will retun the exam data , it will aggrigde them according to exam exam_title
 @app.route('/exam_data2', methods=['GET'])
 def get_exam_data2():
     # MongoDB connection setup
     client = MongoClient("mongodb://localhost:27017")  # Replace with your MongoDB connection string
     db = client["local"]  # Replace with your database name
-    collection = db["test"] 
+    collection = db["exams"] 
 
     # Define the aggregation pipeline to group by "exam_title"
     pipeline = [
@@ -479,7 +483,7 @@ def get_unique_exam_categories():
         # Connect to MongoDB
         client = MongoClient("mongodb://localhost:27017/")
         db = client['local']
-        collection = db['test']
+        collection = db['exams']
 
         # Query MongoDB to get unique exam categories
         unique_exam_categories = collection.distinct("exam_category")
@@ -519,6 +523,74 @@ def get_categories_with_question_count():
     except Exception as e:
         return jsonify({'error': str(e)})
 
+# this function will genrate an exam for the gards 
+# it will accept the folowing exam_title , p1.exam_category , p2.group , p3.[question , nr , pts]
+# this function will follow this Alog
+# 1. using p3. it will genrate random question with desiger amoun acording to nr with pts 
+# 2. it will loop thro the grop acoording to p2 and will genrate exam for each student with same question 
+# 3. it will insert the exam
+@app.route('/generate_exam2', methods=['POST'])
+def generate_exam2():
+    try:
+        # Connect to your MongoDB database
+        client = MongoClient('mongodb://localhost:27017/')  # Replace with your MongoDB connection string
+        db = client['local']  # Replace with your database name
+        collection = db['quastion']  # Replace with your collection name
+        test_collection = db['exams']
+        data = request.json  # Assuming the data is sent as a JSON list of elements
+        result = []
+
+            # Check if the exam title already exists
+        if test_collection.find_one({"exam_title": request.json.get('exam_title')}):
+            return jsonify({"message": "Exam title already exists for this group."}), 409
+
+        # 1. 
+        for element in data["element"]:
+            category = element.get('cat')
+            nr = element.get('nr')
+            pts = element.get('pts')
+
+            # Find questions that match the category
+            questions = list(collection.find({"Category": category}))
+            for q in questions :
+                q["answer"] =""
+                q["pts"] = pts
+
+            for i in range(nr) :
+                if questions:
+                    # Select a random question from the list
+                    random_question = random.choice(questions)  
+                    # Convert the ObjectId to a string
+                    random_question['_id'] = str(random_question['_id'])
+
+                    result.append(random_question)
+
+        # 2.
+        group = request.json.get('group')
+        # Retrieve students in the specified group
+        students = db['students'].find({'Groups': group})
+        for student in students:
+            exam = {
+                "student_id": student['ID'],
+                "student_name": student['Name'],
+                "question": result,
+                "exam_title": request.json.get('exam_title'),
+                "exam_category": request.json.get('exam_category'),
+                "class": student['Class'],
+                "group": group,
+                "active": False,
+                "date": str(datetime.utcnow()),
+                "starting_time": "",
+                "endinging_time": "",
+                "platform": ""
+            }
+            test_collection.insert_one(exam)
+
+
+        print("DONE")
+        return jsonify({"message": "Exams generated for the " + group + " successfully"})
+    except Exception as e :
+        return jsonify({"error" : str(e) })
 
 
 if __name__ == "__main__":

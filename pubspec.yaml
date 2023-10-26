@@ -44,6 +44,7 @@ dependencies:
   excel: ^2.1.0
   intl: ^0.18.1
   collection: ^1.17.0
+  docx_template: ^0.3.6
 
 dev_dependencies:
   flutter_test:

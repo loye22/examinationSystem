@@ -1,37 +1,61 @@
 from flask import Flask, request, jsonify
 from pymongo import MongoClient
-import random
+from datetime import datetime
 
 app = Flask(__name__)
 
-# Connect to your MongoDB database
-client = MongoClient('mongodb://localhost:27017/')  # Replace with your MongoDB connection string
-db = client['local']  # Replace with your database name
-collection = db['quastion']  # Replace with your collection name
+# MongoDB connection
+client = MongoClient('mongodb://localhost:27017/')
+db = client['local']  # Change to your actual database name
+test_collection = db['test']  # The collection for exams
 
-@app.route('/get_random_questions', methods=['POST'])
-def get_random_questions():
-    data = request.json  # Assuming the data is sent as a JSON list of elements
+@app.route('/generate_exam', methods=['POST'])
+def generate_exam():
+    group = request.json.get('group')
 
-    result = []
+    # Retrieve students in the specified group
+    students = db['students'].find({'Groups': group})
 
-    for element in data:
-        category = element.get('cat')
+    for student in students:
+        exam = {
+            "student_id": student['ID'],
+            "student_name": student['Name'],
+            "question": [
+                {
+                    "question": "Street closures in the surrounding area of specials event site must obtain municipal approval only",
+                    "quastionCategory": "True or False",
+                    "correctAnswer": "B",
+                    "points": 1,
+                    "selected_answer": "",
+                    "Category": "Special event security2",
+                    "options": [
+                        {
+                            "label": "A",
+                            "text": "Right"
+                        },
+                        {
+                            "label": "B",
+                            "text": "Wrong"
+                        }
+                    ]
+                },
+                # Add more questions here
+            ],
+            "exam_title": request.json.get('exam_title'),
+            "exam_category": request.json.get('exam_category'),
+            "class": student['Class'],
+            "group": group,
+            "active": True,
+            "date": str(datetime.utcnow()),
+            "starting_time": "",
+            "endinging_time": "",
+            "platform": "web"
+        }
+        
+        # Insert the exam document into the test collection
+        test_collection.insert_one(exam)
 
-        # Find questions that match the category
-        questions = list(collection.find({"Category": category}))
-
-        if questions:
-            # Select a random question from the list for each element
-            random_question = random.choice(questions)
-            
-            # Convert the ObjectId to a string
-            random_question['_id'] = str(random_question['_id'])
-            questions['_id'] = str(questions['_id'])
-
-            result.append(random_question)
-
-    return jsonify(questions)
+    return jsonify({"message": "Exams generated for the group."})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()

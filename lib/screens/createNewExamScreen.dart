@@ -30,6 +30,7 @@ class _createNewExamScreenState extends State<createNewExamScreen> {
   int totalQuestion = 0;
   int totalScore = 0;
   int step = 1;
+  bool loadingExFlag = false ;
 
   @override
   void initState() {
@@ -206,8 +207,10 @@ class _createNewExamScreenState extends State<createNewExamScreen> {
                 SizedBox(
                   width: 10,
                 ),
-                GestureDetector(
-                  onTap: () {
+               this.loadingExFlag ?
+               Center(child: CircularProgressIndicator(),) :
+               GestureDetector(
+                  onTap: () async {
                     switch (step) {
                       case 1:
                         if (_examTitleControler.text.trim().isEmpty) {
@@ -238,7 +241,24 @@ class _createNewExamScreenState extends State<createNewExamScreen> {
                         setState(() {});
                         break;
                       case 4 :
-                        String s = _examTitleControler.text +" \n" + this.selectedCategoryTxt + "\n" + this.selectedGroup;
+                        List<Map<String,dynamic>> questionsReq = [] ;
+                        this.questionControllers.keys.forEach((key) {
+                          // Check if the key exists in both questionNe and points
+                          if (this.pointsControllers.containsKey(key)) {
+                            // Create a map with the desired structure and add it to the combinedList
+                            questionsReq.add({
+                              'cat': key,
+                              'nr': int.parse(this.questionControllers[key]!.text),
+                              'pts': int.parse(this.pointsControllers[key]!.text),
+                            });
+                          }
+                        });
+                        this.loadingExFlag = true;
+                        setState(() {});
+                        await generateExam(_examTitleControler.text.trim() ,this.selectedCategoryTxt , this.selectedGroup , questionsReq);
+                        this.loadingExFlag = false;
+                        setState(() {});
+                        /*String s = _examTitleControler.text +" \n" + this.selectedCategoryTxt + "\n" + this.selectedGroup;
                         List<Map<String,String>> questionsReq = [] ;
                         this.questionControllers.keys.forEach((key) {
                           // Check if the key exists in both questionNe and points
@@ -251,8 +271,7 @@ class _createNewExamScreenState extends State<createNewExamScreen> {
                             });
                           }
                         });
-
-                        MyDialog.showAlert(context, s + "\n" + questionsReq.toString());
+                        MyDialog.showAlert(context, s + "\n" + questionsReq.toString());*/
 
                         break;
                     }
@@ -669,6 +688,48 @@ class _createNewExamScreenState extends State<createNewExamScreen> {
       return reversedList;
     } else {
       throw Exception('Failed to load data');
+    }
+  }
+
+  // this funtion will genrate the exam
+  Future<void> generateExam( String examTitle , String exam_cat , String group , List<Map<String,dynamic>> questionList) async{
+    try{
+      final apiUrl = 'http://127.0.0.1:5000/generate_exam2'; // Replace with your actual API URL
+
+      final headers = {
+        'Content-Type': 'application/json',
+      };
+
+      final examData = {
+        "exam_title": _examTitleControler.text.trim() ,
+        "exam_category" : this.selectedCategoryTxt ,
+        "group": this.selectedGroup,
+        "element" :questionList,
+      };
+
+      final String jsonData = json.encode(examData);
+
+      final response = await http.post(
+        Uri.parse(apiUrl),
+        headers: headers,
+        body: jsonData,
+      );
+
+      if (response.statusCode == 200) {
+        print('Exam generated successfully.');
+        MyDialog.showAlert(context,'Exam generated successfully.');
+      } else if (response.statusCode == 409) {
+        print('Exam title already exists for this group.');
+        MyDialog.showAlert(context,'Exam title already exists for this group.');
+      } else {
+        print('Failed to generate the exam. Status code: ${response.statusCode}');
+        MyDialog.showAlert(context , 'Failed to generate the exam. Status code: ${response.statusCode}');
+
+      }
+    }
+    catch(e){
+      MyDialog.showAlert(context, e.toString());
+      print(e.toString());
     }
   }
 

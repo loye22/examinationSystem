@@ -8,6 +8,8 @@ import 'package:tsti_exam_sys/models/Dialog.dart';
 import 'package:tsti_exam_sys/widget/examCard.dart';
 import '../models/staticVars.dart';
 import '../test/test.dart';
+import '../widget/ExamDetailsPopUp.dart';
+import '../widget/ReviewQuestionsPopUp.dart';
 import '../widget/button2.dart';
 import '../widget/sideBar.dart';
 import 'package:http/http.dart' as http;
@@ -41,7 +43,7 @@ class _examScreenState extends State<examScreen> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    fetchFirst50Exams();
+    exam_data2();
   }
 
   @override
@@ -75,7 +77,7 @@ class _examScreenState extends State<examScreen> {
                   button2(
                     onTap: () async {
 
-                       dynamic x = await fetchFirst50Exams();
+                       dynamic x = await exam_data2();
                        MyDialog.showAlert(context, x.toString());
 
 
@@ -181,7 +183,7 @@ class _examScreenState extends State<examScreen> {
                                   // Handle tap on the item
                                   // You can navigate to a new screen or perform other actions here
                                   if (index == 0) {
-                                    await fetchFirst50Exams();
+                                    await exam_data2();
                                     return;
                                   }
                                   this.dataTableFlag = true;
@@ -217,28 +219,52 @@ class _examScreenState extends State<examScreen> {
                               ? DateTime.parse(e['exam_data'].first['date'])
                               : null;
                           final group = e['exam_data']?.first['group'] ;
-
-
-                          return examCard(
+                           return  examCard(
                             examName: e['_id'] ?? '404 NOTfound',
                             totalPoints: '100',
                             questionCount: '50',
                             group: group == null  ?'404 NOTfound' : group.toString() ,
                             CreatedTime: date == null  ?'404 NOTfound' : DateFormat('MMMM d, y H:mm a').format(date).toString(),//  ,
-                            onPublish: () {
-                              // Handle the "Publish" button action
+                            onPublish: () async {
+
                             },
                             onPreview: () {
                               // Handle the "Preview Exam" button action
+
                             },
                             onViewQuestions: () {
                               // Handle the "Exam Questions" button action
+                              showDialog(
+                                context: context,
+                                builder: (context) {
+                                  final List<dynamic> rawData =  e['exam_data']?.first['question']; // Your data source
+                                  final List<Map<String, dynamic>> questions = rawData.cast<Map<String, dynamic>>();
+                                  return ReviewQuestionsPopUp(questions: questions,);
+                                },
+                              );
                             },
                             onExportToWord: () {
                               // Handle the "Export to Word" button action
+                              MyDialog.showAlert(context, "Comming soon ");
                             },
                             onStop: (){},
-                            onDetail: (){},
+                            onDetail: (){
+                              showDialog(
+                                context: context,
+                                builder: (context) {
+                                  return ExamDetailsPopUp(
+                                    examTitle: e['_id'] ?? "404notFound",
+                                    pts: e['exam_data']?.first['question'].first["pts"].toString() ?? "404Notfound",
+                                    QuestionNr:e['exam_data']?.first['question'].length.toString() ?? "404Notfound",
+                                    examCategory:e['exam_data']?.first['exam_category'] ,
+                                    group: e['exam_data']?.first['group'] ?? "404Notfound",
+                                    active: e['exam_data']?.first['active'] ?? "404Notfound", // Set this value based on your data
+                                    date: e['exam_data']?.first['date'] ?? "404Notfound", // Replace with the actual date
+                                  );
+                                },
+                              );
+
+                            },
                           );
                         }).toList()
                       ),
@@ -300,7 +326,7 @@ class _examScreenState extends State<examScreen> {
   }
 
   // this function will returnst all the students (the first 50 ones)
-  Future<List<dynamic>> fetchFirst50Exams() async {
+  Future<List<dynamic>> exam_data2() async {
     final response =
     await http.get(Uri.parse('http://localhost:5000/exam_data2'));
     if (response.statusCode == 200) {
